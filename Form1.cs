@@ -11,19 +11,22 @@ namespace Ravintolatilaus
 {
     public partial class Form1 : Form
     {
+        Esimies esimies = new Esimies();
+
         public Form1()
         {
             InitializeComponent();
+   
         }
 
-        public void button1_Click(object sender, EventArgs e)
+        public void Sulje_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        public void esimies_Click(object sender, EventArgs e)
+        private void pomo_Click(object sender, EventArgs e)
         {
-            
+            esimies.Show();
         }
     }
 }
