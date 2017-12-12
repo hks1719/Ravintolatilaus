@@ -61,6 +61,7 @@
             this.esimies.TabIndex = 2;
             this.esimies.Text = "Esimies";
             this.esimies.UseVisualStyleBackColor = true;
+            this.esimies.Click += new System.EventHandler(this.esimies_Click);
             // 
             // button1
             // 

@@ -9,19 +9,19 @@ using System.Windows.Forms;
 
 namespace Ravintolatilaus
 {
-    public partial class Form1 : Form
+    public partial class Esimies : Form
     {
-        public Form1()
+        public Esimies()
         {
             InitializeComponent();
         }
 
-        public void button1_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        public void esimies_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
             
         }
