@@ -28,24 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.kokki = new System.Windows.Forms.Button();
+            this.tarjoilija = new System.Windows.Forms.Button();
+            this.esimies = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // kokki
             // 
-            this.button1.Location = new System.Drawing.Point(29, 43);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 71);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.kokki.Location = new System.Drawing.Point(22, 35);
+            this.kokki.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kokki.Name = "kokki";
+            this.kokki.Size = new System.Drawing.Size(64, 58);
+            this.kokki.TabIndex = 0;
+            this.kokki.Text = "Kokki";
+            this.kokki.UseVisualStyleBackColor = true;
+            // 
+            // tarjoilija
+            // 
+            this.tarjoilija.Location = new System.Drawing.Point(125, 35);
+            this.tarjoilija.Name = "tarjoilija";
+            this.tarjoilija.Size = new System.Drawing.Size(75, 23);
+            this.tarjoilija.TabIndex = 1;
+            this.tarjoilija.Text = "Tarjoilija";
+            this.tarjoilija.UseVisualStyleBackColor = true;
+            // 
+            // esimies
+            // 
+            this.esimies.Location = new System.Drawing.Point(249, 53);
+            this.esimies.Name = "esimies";
+            this.esimies.Size = new System.Drawing.Size(75, 23);
+            this.esimies.TabIndex = 2;
+            this.esimies.Text = "Esimies";
+            this.esimies.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 253);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(517, 287);
+            this.Controls.Add(this.esimies);
+            this.Controls.Add(this.tarjoilija);
+            this.Controls.Add(this.kokki);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -54,7 +78,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button kokki;
+        private System.Windows.Forms.Button tarjoilija;
+        private System.Windows.Forms.Button esimies;
     }
 }
 
