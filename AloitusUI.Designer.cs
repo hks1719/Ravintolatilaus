@@ -1,6 +1,6 @@
 ﻿namespace Ravintolatilaus
 {
-    partial class Form1
+    partial class AloitusUI
     {
         /// <summary>
         /// Required designer variable.

@@ -9,11 +9,11 @@ using System.Windows.Forms;
 
 namespace Ravintolatilaus
 {
-    public partial class Form1 : Form
+    public partial class AloitusUI : Form
     {
         Esimies esimies = new Esimies();
 
-        public Form1()
+        public AloitusUI()
         {
             InitializeComponent();
    

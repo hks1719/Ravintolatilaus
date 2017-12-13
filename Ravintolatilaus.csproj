@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="AloitusUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AloitusUI.Designer.cs">
+      <DependentUpon>AloitusUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Esimies.cs">
       <SubType>Form</SubType>
@@ -55,13 +55,22 @@
     <Compile Include="Esimies.Designer.cs">
       <DependentUpon>Esimies.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginUI.Designer.cs">
+      <DependentUpon>LoginUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="AloitusUI.resx">
+      <DependentUpon>AloitusUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Esimies.resx">
       <DependentUpon>Esimies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginUI.resx">
+      <DependentUpon>LoginUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
