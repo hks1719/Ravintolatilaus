@@ -39,5 +39,10 @@ namespace Ravintolatilaus
                 MessageBox.Show("Väärä käyttäjätunnus tai salasana. Saatanan aasi! Kirjoita tarkemmin!");
             }
         }
+
+        private void Exit1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

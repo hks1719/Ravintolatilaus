@@ -29,18 +29,20 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.User = new System.Windows.Forms.Label();
-            this.Pass = new System.Windows.Forms.Label();
-            this.UserText1 = new System.Windows.Forms.TextBox();
+            this.Loginbutton = new System.Windows.Forms.Button();
             this.PassText1 = new System.Windows.Forms.TextBox();
+            this.UserText1 = new System.Windows.Forms.TextBox();
+            this.Pass = new System.Windows.Forms.Label();
+            this.User = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.Loginbutton = new System.Windows.Forms.Button();
+            this.Exit1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.Exit1);
             this.groupBox1.Controls.Add(this.Loginbutton);
             this.groupBox1.Controls.Add(this.PassText1);
             this.groupBox1.Controls.Add(this.UserText1);
@@ -54,14 +56,29 @@
             this.groupBox1.Text = "Admin";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // User
+            // Loginbutton
             // 
-            this.User.AutoSize = true;
-            this.User.Location = new System.Drawing.Point(30, 20);
-            this.User.Name = "User";
-            this.User.Size = new System.Drawing.Size(63, 13);
-            this.User.TabIndex = 0;
-            this.User.Text = "Kayttajanimi";
+            this.Loginbutton.Location = new System.Drawing.Point(129, 123);
+            this.Loginbutton.Name = "Loginbutton";
+            this.Loginbutton.Size = new System.Drawing.Size(75, 23);
+            this.Loginbutton.TabIndex = 3;
+            this.Loginbutton.Text = "Kirjaudu";
+            this.Loginbutton.UseVisualStyleBackColor = true;
+            this.Loginbutton.Click += new System.EventHandler(this.Loginbutton_Click);
+            // 
+            // PassText1
+            // 
+            this.PassText1.Location = new System.Drawing.Point(114, 86);
+            this.PassText1.Name = "PassText1";
+            this.PassText1.Size = new System.Drawing.Size(100, 20);
+            this.PassText1.TabIndex = 3;
+            // 
+            // UserText1
+            // 
+            this.UserText1.Location = new System.Drawing.Point(114, 17);
+            this.UserText1.Name = "UserText1";
+            this.UserText1.Size = new System.Drawing.Size(100, 20);
+            this.UserText1.TabIndex = 2;
             // 
             // Pass
             // 
@@ -72,19 +89,14 @@
             this.Pass.TabIndex = 1;
             this.Pass.Text = "Salasana";
             // 
-            // UserText1
+            // User
             // 
-            this.UserText1.Location = new System.Drawing.Point(114, 17);
-            this.UserText1.Name = "UserText1";
-            this.UserText1.Size = new System.Drawing.Size(100, 20);
-            this.UserText1.TabIndex = 2;
-            // 
-            // PassText1
-            // 
-            this.PassText1.Location = new System.Drawing.Point(114, 86);
-            this.PassText1.Name = "PassText1";
-            this.PassText1.Size = new System.Drawing.Size(100, 20);
-            this.PassText1.TabIndex = 3;
+            this.User.AutoSize = true;
+            this.User.Location = new System.Drawing.Point(30, 20);
+            this.User.Name = "User";
+            this.User.Size = new System.Drawing.Size(63, 13);
+            this.User.TabIndex = 0;
+            this.User.Text = "Kayttajanimi";
             // 
             // label1
             // 
@@ -108,15 +120,15 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Ruokasofta";
             // 
-            // Loginbutton
+            // Exit1
             // 
-            this.Loginbutton.Location = new System.Drawing.Point(129, 123);
-            this.Loginbutton.Name = "Loginbutton";
-            this.Loginbutton.Size = new System.Drawing.Size(75, 23);
-            this.Loginbutton.TabIndex = 3;
-            this.Loginbutton.Text = "Kirjaudu";
-            this.Loginbutton.UseVisualStyleBackColor = true;
-            this.Loginbutton.Click += new System.EventHandler(this.Loginbutton_Click);
+            this.Exit1.Location = new System.Drawing.Point(18, 123);
+            this.Exit1.Name = "Exit1";
+            this.Exit1.Size = new System.Drawing.Size(75, 23);
+            this.Exit1.TabIndex = 3;
+            this.Exit1.Text = "Lopeta";
+            this.Exit1.UseVisualStyleBackColor = true;
+            this.Exit1.Click += new System.EventHandler(this.Exit1_Click);
             // 
             // LoginUI
             // 
@@ -145,5 +157,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Loginbutton;
+        private System.Windows.Forms.Button Exit1;
     }
 }
