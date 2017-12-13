@@ -11,9 +11,17 @@ namespace Ravintolatilaus
 {
     public partial class Tarjoilija : Form
     {
+        public Tarjoilija tarjoilija;
+
         public Tarjoilija()
         {
             InitializeComponent();
+        }
+
+        public Tarjoilija(Tarjoilija tarjoilija)
+        {
+            InitializeComponent();
+            this.tarjoilija = tarjoilija;
         }
     }
 }

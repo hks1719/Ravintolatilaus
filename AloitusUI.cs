@@ -13,10 +13,22 @@ namespace Ravintolatilaus
     {
         Esimies esimies = new Esimies();
 
+        
+
         public AloitusUI()
         {
             InitializeComponent();
+
+            //tarjoilijapainike
+            tarjoilija.Click += Tarjoilija_Click;
    
+        }
+
+        //tarjoilijapainike
+        private void Tarjoilija_Click(object sender, EventArgs e)
+        {
+            Tarjoilija tarjoilija = new Tarjoilija();
+            tarjoilija.Show();
         }
 
         public void Sulje_Click(object sender, EventArgs e)
