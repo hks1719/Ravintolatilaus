@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Exit1 = new System.Windows.Forms.Button();
             this.Loginbutton = new System.Windows.Forms.Button();
             this.PassText1 = new System.Windows.Forms.TextBox();
             this.UserText1 = new System.Windows.Forms.TextBox();
@@ -36,7 +37,6 @@
             this.User = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.Exit1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,6 +55,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Admin";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // Exit1
+            // 
+            this.Exit1.Location = new System.Drawing.Point(18, 123);
+            this.Exit1.Name = "Exit1";
+            this.Exit1.Size = new System.Drawing.Size(75, 23);
+            this.Exit1.TabIndex = 3;
+            this.Exit1.Text = "Lopeta";
+            this.Exit1.UseVisualStyleBackColor = true;
+            this.Exit1.Click += new System.EventHandler(this.Exit1_Click);
             // 
             // Loginbutton
             // 
@@ -119,16 +129,6 @@
             this.label2.Size = new System.Drawing.Size(92, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Ruokasofta";
-            // 
-            // Exit1
-            // 
-            this.Exit1.Location = new System.Drawing.Point(18, 123);
-            this.Exit1.Name = "Exit1";
-            this.Exit1.Size = new System.Drawing.Size(75, 23);
-            this.Exit1.TabIndex = 3;
-            this.Exit1.Text = "Lopeta";
-            this.Exit1.UseVisualStyleBackColor = true;
-            this.Exit1.Click += new System.EventHandler(this.Exit1_Click);
             // 
             // LoginUI
             // 
