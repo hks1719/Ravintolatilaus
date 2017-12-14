@@ -14,23 +14,26 @@ namespace Ravintolatilaus
 {
     public partial class LoginUI : Form
     {
-        SqlConnection con = new SqlConnection();
+        ////MSSQL Tietokanta koodi
+        //SqlConnection con = new SqlConnection();
         public LoginUI()
         {
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Data Source=PETTERIS-PC2\\SQLEXPRESSKOULU;Initial Catalog=Ravintola;Integrated Security=True";
+            ////MSSQL Tietokanta koodi
+            //SqlConnection con = new SqlConnection();
+            //con.ConnectionString = "Data Source=PETTERIS-PC2\\SQLEXPRESSKOULU;Initial Catalog=Ravintola;Integrated Security=True";
             InitializeComponent();
             PassText1.PasswordChar = '•';
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'sTUDENTDataSet.login' table. You can move, or remove it, as needed.  
-            //this.loginTableAdapter.Fill(this.sTUDENTDataSet.login);  
-            SqlConnection con = new SqlConnection("Data Source=PETTERIS-PC2\\SQLEXPRESSKOULU;Initial Catalog=Ravintola;Integrated Security=True");
-            con.Open();
+            ////MSSQL Tietokanta koodi
+            //// TODO: This line of code loads data into the 'sTUDENTDataSet.login' table. You can move, or remove it, as needed.  
+            ////this.loginTableAdapter.Fill(this.sTUDENTDataSet.login);  
+            //SqlConnection con = new SqlConnection("Data Source=PETTERIS-PC2\\SQLEXPRESSKOULU;Initial Catalog=Ravintola;Integrated Security=True");
+            //con.Open();
 
-            {
-            }
+            //{
+            //}
         }
         private void groupBox1_Enter(object sender, EventArgs e)
         {
@@ -40,45 +43,47 @@ namespace Ravintolatilaus
         private void Loginbutton_Click(object sender, EventArgs e)
         {
             //Kirjautumis koodi Formssissa määritellyillä tunnuksilla
-            //
-            //string user = "testi.tauno";
-            //int pass = 1234;
-            //if (user == this.UserText1.Text && pass == Convert.ToInt32(this.PassText1.Text))
-            //{
-            //    MessageBox.Show("Käyttäjätunnus ja salasana Täsmää");
-            //    this.Hide();
-            //    AloitusUI f2 = new AloitusUI();
-            //    f2.ShowDialog();
 
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Väärä käyttäjätunnus tai salasana. Saatanan aasi! Kirjoita tarkemmin!");
-            //}
 
-            //Kirjautuminen SQL kannasta katsoen
-            //
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Data Source=PETTERIS-PC2\\SQLEXPRESSKOULU;Initial Catalog=Ravintola;Integrated Security=True";
-            con.Open();
-            string userid = UserText1.Text;
-            string password = PassText1.Text;
-            SqlCommand cmd = new SqlCommand("select userid,password from login where userid='" + UserText1.Text + "'and password='" + PassText1.Text + "'", con);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            if (dt.Rows.Count > 0)
+            string user = "testi.tauno";
+            int pass = 12345;
+            if (user == this.UserText1.Text && pass == Convert.ToInt32(this.PassText1.Text))
             {
                 MessageBox.Show("Käyttäjätunnus ja salasana Täsmää");
                 this.Hide();
                 AloitusUI f2 = new AloitusUI();
                 f2.ShowDialog();
+
             }
             else
             {
                 MessageBox.Show("Väärä käyttäjätunnus tai salasana. Saatanan aasi! Kirjoita tarkemmin!");
             }
-            con.Close();
+
+            ////MSSQL Tietokanta koodi
+            ////Kirjautuminen SQL kannasta katsoen
+            ////
+            //SqlConnection con = new SqlConnection();
+            //con.ConnectionString = "Data Source=PETTERIS-PC2\\SQLEXPRESSKOULU;Initial Catalog=Ravintola;Integrated Security=True";
+            //con.Open();
+            //string userid = UserText1.Text;
+            //string password = PassText1.Text;
+            //SqlCommand cmd = new SqlCommand("select userid,password from login where userid='" + UserText1.Text + "'and password='" + PassText1.Text + "'", con);
+            //SqlDataAdapter da = new SqlDataAdapter(cmd);
+            //DataTable dt = new DataTable();
+            //da.Fill(dt);
+            //if (dt.Rows.Count > 0)
+            //{
+            //    MessageBox.Show("Käyttäjätunnus ja salasana Täsmää");
+            //    this.Hide();
+            //    AloitusUI f2 = new AloitusUI();
+            //    f2.ShowDialog();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Väärä käyttäjätunnus tai salasana. Saatanan aasi! Kirjoita tarkemmin!");
+            //}
+            //con.Close();
 
         }
 
