@@ -30,10 +30,11 @@
         {
             this.poytaNroLabel = new System.Windows.Forms.Label();
             this.poytanrotext = new System.Windows.Forms.TextBox();
-            this.asiakasnrotext = new System.Windows.Forms.TextBox();
-            this.asiakasNroLabel = new System.Windows.Forms.Label();
+            this.poytapaikkaNrotext = new System.Windows.Forms.TextBox();
+            this.poytapaikkaNroLabel = new System.Windows.Forms.Label();
             this.alkuruokaLabel = new System.Windows.Forms.Label();
             this.alkuruokanrotext = new System.Windows.Forms.TextBox();
+            this.TilausSyottoTallenna = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // poytaNroLabel
@@ -52,21 +53,21 @@
             this.poytanrotext.Size = new System.Drawing.Size(100, 20);
             this.poytanrotext.TabIndex = 1;
             // 
-            // asiakasnrotext
+            // poytapaikkaNrotext
             // 
-            this.asiakasnrotext.Location = new System.Drawing.Point(138, 47);
-            this.asiakasnrotext.Name = "asiakasnrotext";
-            this.asiakasnrotext.Size = new System.Drawing.Size(100, 20);
-            this.asiakasnrotext.TabIndex = 2;
+            this.poytapaikkaNrotext.Location = new System.Drawing.Point(138, 47);
+            this.poytapaikkaNrotext.Name = "poytapaikkaNrotext";
+            this.poytapaikkaNrotext.Size = new System.Drawing.Size(100, 20);
+            this.poytapaikkaNrotext.TabIndex = 2;
             // 
-            // asiakasNroLabel
+            // poytapaikkaNroLabel
             // 
-            this.asiakasNroLabel.AutoSize = true;
-            this.asiakasNroLabel.Location = new System.Drawing.Point(39, 54);
-            this.asiakasNroLabel.Name = "asiakasNroLabel";
-            this.asiakasNroLabel.Size = new System.Drawing.Size(44, 13);
-            this.asiakasNroLabel.TabIndex = 3;
-            this.asiakasNroLabel.Text = "Asiakas";
+            this.poytapaikkaNroLabel.AutoSize = true;
+            this.poytapaikkaNroLabel.Location = new System.Drawing.Point(39, 54);
+            this.poytapaikkaNroLabel.Name = "poytapaikkaNroLabel";
+            this.poytapaikkaNroLabel.Size = new System.Drawing.Size(67, 13);
+            this.poytapaikkaNroLabel.TabIndex = 3;
+            this.poytapaikkaNroLabel.Text = "PöytäPaikka";
             // 
             // alkuruokaLabel
             // 
@@ -84,15 +85,26 @@
             this.alkuruokanrotext.Size = new System.Drawing.Size(100, 20);
             this.alkuruokanrotext.TabIndex = 5;
             // 
+            // TilausSyottoTallenna
+            // 
+            this.TilausSyottoTallenna.Location = new System.Drawing.Point(333, 305);
+            this.TilausSyottoTallenna.Name = "TilausSyottoTallenna";
+            this.TilausSyottoTallenna.Size = new System.Drawing.Size(75, 23);
+            this.TilausSyottoTallenna.TabIndex = 6;
+            this.TilausSyottoTallenna.Text = "Tallenna";
+            this.TilausSyottoTallenna.UseVisualStyleBackColor = true;
+            this.TilausSyottoTallenna.Click += new System.EventHandler(this.TilausSyottoTallenna_Click);
+            // 
             // TilausSyotto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(482, 394);
+            this.Controls.Add(this.TilausSyottoTallenna);
             this.Controls.Add(this.alkuruokanrotext);
             this.Controls.Add(this.alkuruokaLabel);
-            this.Controls.Add(this.asiakasNroLabel);
-            this.Controls.Add(this.asiakasnrotext);
+            this.Controls.Add(this.poytapaikkaNroLabel);
+            this.Controls.Add(this.poytapaikkaNrotext);
             this.Controls.Add(this.poytanrotext);
             this.Controls.Add(this.poytaNroLabel);
             this.Name = "TilausSyotto";
@@ -106,9 +118,10 @@
 
         private System.Windows.Forms.Label poytaNroLabel;
         private System.Windows.Forms.TextBox poytanrotext;
-        private System.Windows.Forms.TextBox asiakasnrotext;
-        private System.Windows.Forms.Label asiakasNroLabel;
+        private System.Windows.Forms.TextBox poytapaikkaNrotext;
+        private System.Windows.Forms.Label poytapaikkaNroLabel;
         private System.Windows.Forms.Label alkuruokaLabel;
         private System.Windows.Forms.TextBox alkuruokanrotext;
+        private System.Windows.Forms.Button TilausSyottoTallenna;
     }
 }
