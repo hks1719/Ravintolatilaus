@@ -23,5 +23,11 @@ namespace Ravintolatilaus
             InitializeComponent();
             this.tarjoilija = tarjoilija;
         }
+
+        private void uusiTilaus_Click(object sender, EventArgs e)
+        {
+            TilausSyotto f2 = new TilausSyotto();
+            f2.ShowDialog();
+        }
     }
 }

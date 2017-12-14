@@ -33,7 +33,7 @@ namespace Ravintolatilaus
 
         public void Sulje_Click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
         }
 
         private void pomo_Click(object sender, EventArgs e)
