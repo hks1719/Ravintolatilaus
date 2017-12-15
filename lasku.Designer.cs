@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.paluuTarjoilijaNayttoon = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -40,11 +41,21 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Valitse pöytä";
             // 
+            // paluuTarjoilijaNayttoon
+            // 
+            this.paluuTarjoilijaNayttoon.Location = new System.Drawing.Point(58, 377);
+            this.paluuTarjoilijaNayttoon.Name = "paluuTarjoilijaNayttoon";
+            this.paluuTarjoilijaNayttoon.Size = new System.Drawing.Size(122, 54);
+            this.paluuTarjoilijaNayttoon.TabIndex = 1;
+            this.paluuTarjoilijaNayttoon.Text = "Paluu Tarjoilija näyttöön";
+            this.paluuTarjoilijaNayttoon.UseVisualStyleBackColor = true;
+            // 
             // lasku
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(550, 456);
+            this.Controls.Add(this.paluuTarjoilijaNayttoon);
             this.Controls.Add(this.label1);
             this.Name = "lasku";
             this.Text = "lasku";
@@ -56,5 +67,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button paluuTarjoilijaNayttoon;
     }
 }

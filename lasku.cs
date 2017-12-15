@@ -14,6 +14,16 @@ namespace Ravintolatilaus
         public lasku()
         {
             InitializeComponent();
+
+            paluuTarjoilijaNayttoon.Click += PaluuTarjoilijaNayttoon_Click;
+        }
+
+        //paluu tarjoilijanäyttöö painike
+        private void PaluuTarjoilijaNayttoon_Click(object sender, EventArgs e)
+        {
+            Tarjoilija tarjoilija = new Tarjoilija();
+            this.Close();
+            tarjoilija.Show();
         }
     }
 }
