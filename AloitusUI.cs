@@ -28,6 +28,7 @@ namespace Ravintolatilaus
         private void Tarjoilija_Click(object sender, EventArgs e)
         {
             Tarjoilija tarjoilija = new Tarjoilija();
+            this.Close();
             tarjoilija.Show();
         }
 

@@ -24,8 +24,14 @@ namespace Ravintolatilaus
         private void PalaaTarjoilijaNayttoon_Click(object sender, EventArgs e)
         {
             Tarjoilija tarjoilija = new Tarjoilija();
+
+            this.Close();
             tarjoilija.Show();
+
+
         }
+
+
 
         private void TilausSyottoTallenna_Click(object sender, EventArgs e)
         {

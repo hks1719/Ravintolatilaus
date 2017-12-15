@@ -22,11 +22,12 @@ namespace Ravintolatilaus
 
         
         }
-
+        
         //Paluu Aloitusnäyttöön painike
         private void PaluuAloitusnayttoon_Click(object sender, EventArgs e)
         {
             AloitusUI aloitusUI = new AloitusUI();
+            this.Close();
             aloitusUI.Show();
         }
 
@@ -34,6 +35,7 @@ namespace Ravintolatilaus
         private void Lasku_Click(object sender, EventArgs e)
         {
             lasku lasku = new lasku();
+            this.Close();
             lasku.Show();
         }
 
@@ -46,6 +48,7 @@ namespace Ravintolatilaus
         private void uusiTilaus_Click(object sender, EventArgs e)
         {
             TilausSyotto f2 = new TilausSyotto();
+            this.Close();
             f2.ShowDialog();
         }
     }
