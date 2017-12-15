@@ -1,6 +1,6 @@
 ﻿namespace Ravintolatilaus
 {
-    partial class ListaLuku
+    partial class ListanLuku
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListanLuku));
             this.Sulje = new System.Windows.Forms.Button();
             this.MuokkaaListaa = new System.Windows.Forms.Button();
             this.ravintolaDataSet = new Ravintolatilaus.RavintolaDataSet();
             this.ravintolaDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printPreviewDialog2 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printPreviewControl1 = new System.Windows.Forms.PrintPreviewControl();
             ((System.ComponentModel.ISupportInitialize)(this.ravintolaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ravintolaDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -45,6 +49,7 @@
             this.Sulje.TabIndex = 0;
             this.Sulje.Text = "Sulje";
             this.Sulje.UseVisualStyleBackColor = true;
+            this.Sulje.Click += new System.EventHandler(this.Sulje_Click);
             // 
             // MuokkaaListaa
             // 
@@ -66,15 +71,43 @@
             this.ravintolaDataSetBindingSource.DataSource = this.ravintolaDataSet;
             this.ravintolaDataSetBindingSource.Position = 0;
             // 
-            // ListaLuku
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // printPreviewDialog2
+            // 
+            this.printPreviewDialog2.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog2.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog2.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog2.Enabled = true;
+            this.printPreviewDialog2.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog2.Icon")));
+            this.printPreviewDialog2.Name = "printPreviewDialog2";
+            this.printPreviewDialog2.Visible = false;
+            // 
+            // printPreviewControl1
+            // 
+            this.printPreviewControl1.Location = new System.Drawing.Point(20, 23);
+            this.printPreviewControl1.Name = "printPreviewControl1";
+            this.printPreviewControl1.Size = new System.Drawing.Size(393, 456);
+            this.printPreviewControl1.TabIndex = 2;
+            // 
+            // ListanLuku
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(522, 615);
+            this.Controls.Add(this.printPreviewControl1);
             this.Controls.Add(this.MuokkaaListaa);
             this.Controls.Add(this.Sulje);
-            this.Name = "ListaLuku";
-            this.Text = "listanluku";
+            this.Name = "ListanLuku";
+            this.Text = "Pöytävaraukset";
             ((System.ComponentModel.ISupportInitialize)(this.ravintolaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ravintolaDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -87,5 +120,8 @@
         private System.Windows.Forms.Button MuokkaaListaa;
         private System.Windows.Forms.BindingSource ravintolaDataSetBindingSource;
         private RavintolaDataSet ravintolaDataSet;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog2;
+        public System.Windows.Forms.PrintPreviewControl printPreviewControl1;
     }
 }

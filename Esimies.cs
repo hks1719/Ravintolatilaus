@@ -31,16 +31,10 @@ namespace Ravintolatilaus
             this.Hide();
         }
 
-        // Hae tilaukset joiden tila on avoinna
-        private void Avoimet_Click(object sender, EventArgs e)
+        // Hae tilaukset
+        private void Tilaukset_Click(object sender, EventArgs e)
         {
           
-        }
-
-        // Hae tilaukset joiden tila on valmis
-        private void Valmiit_Click(object sender, EventArgs e)
-        {
-         
         }
 
         // Tarkastele pöytävaraustilannetta
@@ -74,12 +68,27 @@ namespace Ravintolatilaus
                     tempList.Add(reader[0].ToString() + " " + reader[1].ToString());
                 }
             }
+            // Suljetaan lukija
             reader.Close();
+            // Suljetaan tietokantayhteys
             con.Close();
             // Sijoitetaan String-tyyppiseksi muunnetut tietokantahaun tulokset taulukkoon 
             string[] poytatilanne = tempList.ToArray();
 
             // Jatkuu tästä siten että taulukon sisältö saadaan ListanLuku-ikkunaan auki
+            // Luodaan tulostusta varten meny-muuttuja, johon sijoitetaan funktion avulla 
+            String meny = "";
+            meny = ListaLuku(poytatilanne);
+
+            ListanLuku lluku = new ListanLuku();
+            lluku.Show();
+
+        }
+
+        // Sijoitetaan poytatilanne taulukon tiedot joinilla string-tyyppiseen muuttujaan, jonka arvo palautetaan 
+        public string ListaLuku(string[] poytatilanne)
+        {
+            return String.Join("", poytatilanne);
         }
     }
     }

@@ -30,36 +30,25 @@ namespace Ravintolatilaus
         /// </summary>
         private void InitializeComponent()
         {
-            this.Avoimet = new System.Windows.Forms.Button();
-            this.Valmiit = new System.Windows.Forms.Button();
+            this.Tilaukset = new System.Windows.Forms.Button();
             this.Poydat = new System.Windows.Forms.Button();
             this.Ruokalista = new System.Windows.Forms.Button();
             this.Takaisin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Avoimet
+            // Tilaukset
             // 
-            this.Avoimet.Location = new System.Drawing.Point(29, 85);
-            this.Avoimet.Name = "Avoimet";
-            this.Avoimet.Size = new System.Drawing.Size(156, 58);
-            this.Avoimet.TabIndex = 0;
-            this.Avoimet.Text = "Avoimet tilaukset";
-            this.Avoimet.UseVisualStyleBackColor = true;
-            this.Avoimet.Click += new System.EventHandler(this.Avoimet_Click);
-            // 
-            // Valmiit
-            // 
-            this.Valmiit.Location = new System.Drawing.Point(216, 85);
-            this.Valmiit.Name = "Valmiit";
-            this.Valmiit.Size = new System.Drawing.Size(156, 58);
-            this.Valmiit.TabIndex = 1;
-            this.Valmiit.Text = "Valmiit tilaukset";
-            this.Valmiit.UseVisualStyleBackColor = true;
-            this.Valmiit.Click += new System.EventHandler(this.Valmiit_Click);
+            this.Tilaukset.Location = new System.Drawing.Point(29, 85);
+            this.Tilaukset.Name = "Tilaukset";
+            this.Tilaukset.Size = new System.Drawing.Size(156, 58);
+            this.Tilaukset.TabIndex = 0;
+            this.Tilaukset.Text = "Tilaukset";
+            this.Tilaukset.UseVisualStyleBackColor = true;
+            this.Tilaukset.Click += new System.EventHandler(this.Tilaukset_Click);
             // 
             // Poydat
             // 
-            this.Poydat.Location = new System.Drawing.Point(29, 169);
+            this.Poydat.Location = new System.Drawing.Point(216, 85);
             this.Poydat.Name = "Poydat";
             this.Poydat.Size = new System.Drawing.Size(156, 58);
             this.Poydat.TabIndex = 2;
@@ -78,7 +67,7 @@ namespace Ravintolatilaus
             // 
             // Takaisin
             // 
-            this.Takaisin.Location = new System.Drawing.Point(29, 309);
+            this.Takaisin.Location = new System.Drawing.Point(29, 169);
             this.Takaisin.Name = "Takaisin";
             this.Takaisin.Size = new System.Drawing.Size(156, 58);
             this.Takaisin.TabIndex = 4;
@@ -94,8 +83,7 @@ namespace Ravintolatilaus
             this.Controls.Add(this.Takaisin);
             this.Controls.Add(this.Ruokalista);
             this.Controls.Add(this.Poydat);
-            this.Controls.Add(this.Valmiit);
-            this.Controls.Add(this.Avoimet);
+            this.Controls.Add(this.Tilaukset);
             this.Name = "Esimies";
             this.Text = "Esimies";
             this.ResumeLayout(false);
@@ -104,8 +92,7 @@ namespace Ravintolatilaus
 
         #endregion
 
-        private System.Windows.Forms.Button Avoimet;
-        private System.Windows.Forms.Button Valmiit;
+        private System.Windows.Forms.Button Tilaukset;
         private System.Windows.Forms.Button Poydat;
         private System.Windows.Forms.Button Ruokalista;
         private System.Windows.Forms.Button Takaisin;

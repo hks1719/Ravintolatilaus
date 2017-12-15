@@ -9,15 +9,16 @@ using System.Windows.Forms;
 
 namespace Ravintolatilaus
 {
-    public partial class ListaLuku : Form
+    public partial class ListanLuku : Form
     {
 
-        public ListaLuku(string[] poytatilanne)
-        {
-             
-        }
-        
+
         private void MuokkaaListaa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Sulje_Click(object sender, EventArgs e)
         {
 
         }
