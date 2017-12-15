@@ -19,10 +19,19 @@ namespace Ravintolatilaus
             //painikkeet
             lasku.Click += Lasku_Click;
             paluuAloitusnayttoon.Click += PaluuAloitusnayttoon_Click;
+            ruokalista.Click += Ruokalista_Click;
 
         
         }
-        
+
+        private void Ruokalista_Click(object sender, EventArgs e)
+        {
+            Ruokalista ruokalista = new Ruokalista();
+            this.Close();
+            ruokalista.Show();
+
+        }
+
         //Paluu Aloitusnäyttöön painike
         private void PaluuAloitusnayttoon_Click(object sender, EventArgs e)
         {
