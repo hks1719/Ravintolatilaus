@@ -1,4 +1,6 @@
-﻿namespace Ravintolatilaus
+﻿using System.Windows.Forms;
+
+namespace Ravintolatilaus
 {
     partial class Esimies
     {
@@ -28,69 +30,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.Avoimet = new System.Windows.Forms.Button();
+            this.Valmiit = new System.Windows.Forms.Button();
+            this.Poydat = new System.Windows.Forms.Button();
+            this.Ruokalista = new System.Windows.Forms.Button();
+            this.Takaisin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // Avoimet
             // 
-            this.button1.Location = new System.Drawing.Point(29, 85);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(156, 58);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Avoimet tilaukset";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Avoimet.Location = new System.Drawing.Point(29, 85);
+            this.Avoimet.Name = "Avoimet";
+            this.Avoimet.Size = new System.Drawing.Size(156, 58);
+            this.Avoimet.TabIndex = 0;
+            this.Avoimet.Text = "Avoimet tilaukset";
+            this.Avoimet.UseVisualStyleBackColor = true;
+            this.Avoimet.Click += new System.EventHandler(this.Avoimet_Click);
             // 
-            // button2
+            // Valmiit
             // 
-            this.button2.Location = new System.Drawing.Point(216, 85);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(156, 58);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Valmiit tilaukset";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Valmiit.Location = new System.Drawing.Point(216, 85);
+            this.Valmiit.Name = "Valmiit";
+            this.Valmiit.Size = new System.Drawing.Size(156, 58);
+            this.Valmiit.TabIndex = 1;
+            this.Valmiit.Text = "Valmiit tilaukset";
+            this.Valmiit.UseVisualStyleBackColor = true;
+            this.Valmiit.Click += new System.EventHandler(this.Valmiit_Click);
             // 
-            // button3
+            // Poydat
             // 
-            this.button3.Location = new System.Drawing.Point(29, 169);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(156, 58);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Pöytävaraukset";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Poydat.Location = new System.Drawing.Point(29, 169);
+            this.Poydat.Name = "Poydat";
+            this.Poydat.Size = new System.Drawing.Size(156, 58);
+            this.Poydat.TabIndex = 2;
+            this.Poydat.Text = "Pöytävaraukset";
+            this.Poydat.UseVisualStyleBackColor = true;
+            this.Poydat.Click += new System.EventHandler(this.Poydat_Click);
             // 
-            // button4
+            // Ruokalista
             // 
-            this.button4.Location = new System.Drawing.Point(216, 169);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(156, 58);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Ruokalista";
-            this.button4.UseVisualStyleBackColor = true;
+            this.Ruokalista.Location = new System.Drawing.Point(216, 169);
+            this.Ruokalista.Name = "Ruokalista";
+            this.Ruokalista.Size = new System.Drawing.Size(156, 58);
+            this.Ruokalista.TabIndex = 3;
+            this.Ruokalista.Text = "Ruokalista";
+            this.Ruokalista.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // Takaisin
             // 
-            this.button5.Location = new System.Drawing.Point(29, 309);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(156, 58);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Päävalikkoon";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.Takaisin.Location = new System.Drawing.Point(29, 309);
+            this.Takaisin.Name = "Takaisin";
+            this.Takaisin.Size = new System.Drawing.Size(156, 58);
+            this.Takaisin.TabIndex = 4;
+            this.Takaisin.Text = "Päävalikkoon";
+            this.Takaisin.UseVisualStyleBackColor = true;
+            this.Takaisin.Click += new System.EventHandler(this.Takaisin_Click);
             // 
             // Esimies
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(403, 403);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Takaisin);
+            this.Controls.Add(this.Ruokalista);
+            this.Controls.Add(this.Poydat);
+            this.Controls.Add(this.Valmiit);
+            this.Controls.Add(this.Avoimet);
             this.Name = "Esimies";
             this.Text = "Esimies";
             this.ResumeLayout(false);
@@ -99,10 +104,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button Avoimet;
+        private System.Windows.Forms.Button Valmiit;
+        private System.Windows.Forms.Button Poydat;
+        private System.Windows.Forms.Button Ruokalista;
+        private System.Windows.Forms.Button Takaisin;
     }
 }
