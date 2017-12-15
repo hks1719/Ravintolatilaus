@@ -32,6 +32,7 @@
             this.ruokalista = new System.Windows.Forms.Button();
             this.lasku = new System.Windows.Forms.Button();
             this.poytavaraukset = new System.Windows.Forms.Button();
+            this.paluuAloitusnayttoon = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // uusiTilaus
@@ -75,11 +76,22 @@
             this.poytavaraukset.Text = "Pöytävaraukset";
             this.poytavaraukset.UseVisualStyleBackColor = true;
             // 
+            // paluuAloitusnayttoon
+            // 
+            this.paluuAloitusnayttoon.Location = new System.Drawing.Point(327, 304);
+            this.paluuAloitusnayttoon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.paluuAloitusnayttoon.Name = "paluuAloitusnayttoon";
+            this.paluuAloitusnayttoon.Size = new System.Drawing.Size(153, 94);
+            this.paluuAloitusnayttoon.TabIndex = 5;
+            this.paluuAloitusnayttoon.Text = "Paluu aloitusnäyttöön";
+            this.paluuAloitusnayttoon.UseVisualStyleBackColor = true;
+            // 
             // Tarjoilija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(632, 427);
+            this.Controls.Add(this.paluuAloitusnayttoon);
             this.Controls.Add(this.poytavaraukset);
             this.Controls.Add(this.lasku);
             this.Controls.Add(this.ruokalista);
@@ -97,5 +109,6 @@
         private System.Windows.Forms.Button ruokalista;
         private System.Windows.Forms.Button lasku;
         private System.Windows.Forms.Button poytavaraukset;
+        private System.Windows.Forms.Button paluuAloitusnayttoon;
     }
 }

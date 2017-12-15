@@ -17,6 +17,14 @@ namespace Ravintolatilaus
         public TilausSyotto()
         {
             InitializeComponent();
+            palaaTarjoilijaNayttoon.Click += PalaaTarjoilijaNayttoon_Click;
+        }
+
+        //palaa tarjoilijanäyttöön painike
+        private void PalaaTarjoilijaNayttoon_Click(object sender, EventArgs e)
+        {
+            Tarjoilija tarjoilija = new Tarjoilija();
+            tarjoilija.Show();
         }
 
         private void TilausSyottoTallenna_Click(object sender, EventArgs e)
