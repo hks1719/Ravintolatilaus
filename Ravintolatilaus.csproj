@@ -70,11 +70,11 @@
     <Compile Include="Esimies.Designer.cs">
       <DependentUpon>Esimies.cs</DependentUpon>
     </Compile>
-    <Compile Include="lasku.cs">
+    <Compile Include="tilaus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="lasku.Designer.cs">
-      <DependentUpon>lasku.cs</DependentUpon>
+    <Compile Include="tilaus.Designer.cs">
+      <DependentUpon>tilaus.cs</DependentUpon>
     </Compile>
     <Compile Include="ListanLuku.cs">
       <SubType>Form</SubType>
@@ -135,8 +135,8 @@
     <EmbeddedResource Include="Esimies.resx">
       <DependentUpon>Esimies.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="lasku.resx">
-      <DependentUpon>lasku.cs</DependentUpon>
+    <EmbeddedResource Include="tilaus.resx">
+      <DependentUpon>tilaus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListanLuku.resx">
       <DependentUpon>ListanLuku.cs</DependentUpon>
