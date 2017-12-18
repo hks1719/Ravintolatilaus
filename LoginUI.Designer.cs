@@ -49,9 +49,9 @@
             this.groupBox1.Controls.Add(this.Pass);
             this.groupBox1.Controls.Add(this.User);
             this.groupBox1.Location = new System.Drawing.Point(207, 244);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(319, 220);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -60,19 +60,19 @@
             // 
             // Exit1
             // 
-            this.Exit1.Location = new System.Drawing.Point(26, 172);
-            this.Exit1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Exit1.Location = new System.Drawing.Point(32, 172);
+            this.Exit1.Margin = new System.Windows.Forms.Padding(4);
             this.Exit1.Name = "Exit1";
             this.Exit1.Size = new System.Drawing.Size(100, 28);
-            this.Exit1.TabIndex = 3;
+            this.Exit1.TabIndex = 4;
             this.Exit1.Text = "Lopeta";
             this.Exit1.UseVisualStyleBackColor = true;
             this.Exit1.Click += new System.EventHandler(this.Exit1_Click);
             // 
             // Loginbutton
             // 
-            this.Loginbutton.Location = new System.Drawing.Point(186, 172);
-            this.Loginbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Loginbutton.Location = new System.Drawing.Point(173, 172);
+            this.Loginbutton.Margin = new System.Windows.Forms.Padding(4);
             this.Loginbutton.Name = "Loginbutton";
             this.Loginbutton.Size = new System.Drawing.Size(100, 28);
             this.Loginbutton.TabIndex = 3;
@@ -83,23 +83,23 @@
             // PassText1
             // 
             this.PassText1.Location = new System.Drawing.Point(141, 120);
-            this.PassText1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PassText1.Margin = new System.Windows.Forms.Padding(4);
             this.PassText1.Name = "PassText1";
             this.PassText1.Size = new System.Drawing.Size(132, 22);
-            this.PassText1.TabIndex = 3;
+            this.PassText1.TabIndex = 1;
             // 
             // UserText1
             // 
             this.UserText1.Location = new System.Drawing.Point(141, 63);
-            this.UserText1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UserText1.Margin = new System.Windows.Forms.Padding(4);
             this.UserText1.Name = "UserText1";
             this.UserText1.Size = new System.Drawing.Size(132, 22);
-            this.UserText1.TabIndex = 2;
+            this.UserText1.TabIndex = 0;
             // 
             // Pass
             // 
             this.Pass.AutoSize = true;
-            this.Pass.Location = new System.Drawing.Point(29, 120);
+            this.Pass.Location = new System.Drawing.Point(29, 123);
             this.Pass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Pass.Name = "Pass";
             this.Pass.Size = new System.Drawing.Size(67, 17);
@@ -142,13 +142,14 @@
             // 
             // LoginUI
             // 
+            this.AcceptButton = this.Loginbutton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(541, 502);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoginUI";
             this.Text = "LoginUI";
             this.groupBox1.ResumeLayout(false);
