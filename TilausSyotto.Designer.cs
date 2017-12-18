@@ -185,10 +185,12 @@
             // 
             // TilausSyottoTallenna
             // 
-            this.TilausSyottoTallenna.Location = new System.Drawing.Point(530, 477);
+            this.TilausSyottoTallenna.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TilausSyottoTallenna.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.TilausSyottoTallenna.Location = new System.Drawing.Point(775, 484);
             this.TilausSyottoTallenna.Margin = new System.Windows.Forms.Padding(4);
             this.TilausSyottoTallenna.Name = "TilausSyottoTallenna";
-            this.TilausSyottoTallenna.Size = new System.Drawing.Size(100, 67);
+            this.TilausSyottoTallenna.Size = new System.Drawing.Size(130, 60);
             this.TilausSyottoTallenna.TabIndex = 6;
             this.TilausSyottoTallenna.Text = "Tallenna";
             this.TilausSyottoTallenna.UseVisualStyleBackColor = true;
@@ -196,10 +198,12 @@
             // 
             // palaaTarjoilijaNayttoon
             // 
-            this.palaaTarjoilijaNayttoon.Location = new System.Drawing.Point(35, 477);
+            this.palaaTarjoilijaNayttoon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.palaaTarjoilijaNayttoon.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.palaaTarjoilijaNayttoon.Location = new System.Drawing.Point(607, 484);
             this.palaaTarjoilijaNayttoon.Margin = new System.Windows.Forms.Padding(4);
             this.palaaTarjoilijaNayttoon.Name = "palaaTarjoilijaNayttoon";
-            this.palaaTarjoilijaNayttoon.Size = new System.Drawing.Size(100, 67);
+            this.palaaTarjoilijaNayttoon.Size = new System.Drawing.Size(130, 60);
             this.palaaTarjoilijaNayttoon.TabIndex = 7;
             this.palaaTarjoilijaNayttoon.Text = "Palaa tarjoilija näyttöön";
             this.palaaTarjoilijaNayttoon.UseVisualStyleBackColor = true;
