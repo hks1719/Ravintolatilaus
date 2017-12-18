@@ -33,12 +33,12 @@
             this.Sulje = new System.Windows.Forms.Button();
             this.MuokkaaPoytia = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.poytaIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.asiakaspaikkojaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.poytaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ravintolaDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ravintolaDataSet1 = new Ravintolatilaus.RavintolaDataSet1();
             this.poytaTableAdapter = new Ravintolatilaus.RavintolaDataSet1TableAdapters.poytaTableAdapter();
-            this.poytaIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.asiakaspaikkojaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.poytaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ravintolaDataSet1BindingSource)).BeginInit();
@@ -79,6 +79,23 @@
             this.dataGridView1.Size = new System.Drawing.Size(362, 163);
             this.dataGridView1.TabIndex = 2;
             // 
+            // poytaIDDataGridViewTextBoxColumn
+            // 
+            this.poytaIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.poytaIDDataGridViewTextBoxColumn.DataPropertyName = "poytaID";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
+            this.poytaIDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            this.poytaIDDataGridViewTextBoxColumn.HeaderText = "poytaID";
+            this.poytaIDDataGridViewTextBoxColumn.Name = "poytaIDDataGridViewTextBoxColumn";
+            this.poytaIDDataGridViewTextBoxColumn.Width = 69;
+            // 
+            // asiakaspaikkojaDataGridViewTextBoxColumn
+            // 
+            this.asiakaspaikkojaDataGridViewTextBoxColumn.DataPropertyName = "asiakaspaikkoja";
+            this.asiakaspaikkojaDataGridViewTextBoxColumn.HeaderText = "asiakaspaikkoja";
+            this.asiakaspaikkojaDataGridViewTextBoxColumn.Name = "asiakaspaikkojaDataGridViewTextBoxColumn";
+            // 
             // poytaBindingSource
             // 
             this.poytaBindingSource.DataMember = "poyta";
@@ -98,24 +115,7 @@
             // 
             this.poytaTableAdapter.ClearBeforeFill = true;
             // 
-            // poytaIDDataGridViewTextBoxColumn
-            // 
-            this.poytaIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.poytaIDDataGridViewTextBoxColumn.DataPropertyName = "poytaID";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
-            this.poytaIDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
-            this.poytaIDDataGridViewTextBoxColumn.HeaderText = "poytaID";
-            this.poytaIDDataGridViewTextBoxColumn.Name = "poytaIDDataGridViewTextBoxColumn";
-            this.poytaIDDataGridViewTextBoxColumn.Width = 69;
-            // 
-            // asiakaspaikkojaDataGridViewTextBoxColumn
-            // 
-            this.asiakaspaikkojaDataGridViewTextBoxColumn.DataPropertyName = "asiakaspaikkoja";
-            this.asiakaspaikkojaDataGridViewTextBoxColumn.HeaderText = "asiakaspaikkoja";
-            this.asiakaspaikkojaDataGridViewTextBoxColumn.Name = "asiakaspaikkojaDataGridViewTextBoxColumn";
-            // 
-            // lluku
+            // ListanLuku
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -123,7 +123,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.MuokkaaPoytia);
             this.Controls.Add(this.Sulje);
-            this.Name = "lluku";
+            this.Name = "ListanLuku";
             this.Text = "Pöytävaraukset";
             this.Load += new System.EventHandler(this.ListanLuku_load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

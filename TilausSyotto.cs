@@ -98,5 +98,10 @@ namespace Ravintolatilaus
             this.tableAdapterManager.UpdateAll(this.ravintolaDataSet1);
 
         }
+
+        private void palaaTarjoilijaNayttoon_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

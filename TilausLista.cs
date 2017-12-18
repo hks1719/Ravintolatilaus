@@ -16,14 +16,14 @@ namespace Ravintolatilaus
             InitializeComponent();
         }
 
-        private void TilausLista_Load(object sender, EventArgs e)
+        public void TilausLista_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'ravintolaDataSet2.tilaus' table. You can move, or remove it, as needed.
             this.tilausTableAdapter.Fill(this.ravintolaDataSet2.tilaus);
 
         }
 
-        private void fillByToolStripButton_Click(object sender, EventArgs e)
+        public void fillByToolStripButton_Click(object sender, EventArgs e)
         {
             try
             {
@@ -36,9 +36,11 @@ namespace Ravintolatilaus
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void TakaisinEsimies_Click(object sender, EventArgs e)
         {
-
+            Esimies esimies = new Esimies();
+            Close();
+            esimies.Show();
         }
     }
 }

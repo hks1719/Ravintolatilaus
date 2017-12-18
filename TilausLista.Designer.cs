@@ -149,7 +149,7 @@
             this.TakaisinEsimies.TabIndex = 2;
             this.TakaisinEsimies.Text = "Takaisin";
             this.TakaisinEsimies.UseVisualStyleBackColor = true;
-            this.TakaisinEsimies.Click += new System.EventHandler(this.button1_Click);
+            this.TakaisinEsimies.Click += new System.EventHandler(this.TakaisinEsimies_Click);
             // 
             // EsimiesMuokkaaTilausta
             // 
@@ -199,7 +199,7 @@
         private System.Windows.Forms.DataGridViewImageColumn aukiDataGridViewImageColumn;
         private System.Windows.Forms.ToolStrip fillByToolStrip;
         private System.Windows.Forms.ToolStripButton fillByToolStripButton;
-        private System.Windows.Forms.Button TakaisinEsimies;
         private System.Windows.Forms.Button EsimiesMuokkaaTilausta;
+        private System.Windows.Forms.Button TakaisinEsimies;
     }
 }

@@ -16,8 +16,7 @@ namespace Ravintolatilaus
         public ListanLuku()
         {
             InitializeComponent();
-            Sulje.Click += Sulje_Click;
-            MuokkaaPoytia.Click += MuokkaaListaa_Click;
+
         }
 
         public void ListanLuku_load(object sender, EventArgs e)
@@ -35,7 +34,9 @@ namespace Ravintolatilaus
 
         public void Sulje_Click(object sender, EventArgs e)
         {
-            this.Close();         
+            Esimies esimies = new Esimies();
+            Close();
+            esimies.Show();
         }
     }
 }

@@ -15,26 +15,21 @@ namespace Ravintolatilaus
         public Esimies()
         {
             InitializeComponent();
-            Takaisin.Click += Takaisin_Click;
-            Tilaukset.Click += Tilaukset_Click;
-            Poydat.Click += Poydat_Click;
-            Ruokalista.Click += Ruokalista_Click;
         }
 
         // Takaisin päävalikkoon 
         private void Takaisin_Click(object sender, EventArgs e)
         {
             AloitusUI aloitusUI = new AloitusUI();
-            this.Close();
-            aloitusUI.Show();
-            
+            Close();
+            aloitusUI.Show();      
         }
 
         // Hae tilaukset
-        private void Tilaukset_Click(object sender, EventArgs e)
+        public void Tilaukset_Click(object sender, EventArgs e)
         {
             TilausLista tilaukset = new TilausLista();
-            this.Close();
+            Close();
             tilaukset.Show();
         }
 
@@ -42,7 +37,7 @@ namespace Ravintolatilaus
         private void Poydat_Click(object sender, EventArgs e)
         {
             ListanLuku listanLuku = new ListanLuku();
-            this.Close();
+            Close();
             listanLuku.Show();
         }
 
@@ -50,7 +45,7 @@ namespace Ravintolatilaus
         private void Ruokalista_Click(object sender, EventArgs e)
         {
             Ruokalista ruokalista = new Ruokalista();
-            this.Close();
+            Close();
             ruokalista.Show();
         }
     }

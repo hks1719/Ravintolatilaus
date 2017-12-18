@@ -70,6 +70,12 @@
     <Compile Include="Esimies.Designer.cs">
       <DependentUpon>Esimies.cs</DependentUpon>
     </Compile>
+    <Compile Include="Kokki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kokki.Designer.cs">
+      <DependentUpon>Kokki.cs</DependentUpon>
+    </Compile>
     <Compile Include="RavintolaDataSet21.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Esimies.resx">
       <DependentUpon>Esimies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kokki.resx">
+      <DependentUpon>Kokki.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TilausLista.resx">
       <DependentUpon>TilausLista.cs</DependentUpon>

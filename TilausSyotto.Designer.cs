@@ -87,110 +87,108 @@
             // tilausIDLabel
             // 
             tilausIDLabel.AutoSize = true;
-            tilausIDLabel.Location = new System.Drawing.Point(14, 234);
+            tilausIDLabel.Location = new System.Drawing.Point(10, 190);
+            tilausIDLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             tilausIDLabel.Name = "tilausIDLabel";
-            tilausIDLabel.Size = new System.Drawing.Size(62, 17);
+            tilausIDLabel.Size = new System.Drawing.Size(48, 13);
             tilausIDLabel.TabIndex = 9;
             tilausIDLabel.Text = "tilaus ID:";
             // 
             // kommenttiLabel
             // 
             kommenttiLabel.AutoSize = true;
-            kommenttiLabel.Location = new System.Drawing.Point(14, 262);
+            kommenttiLabel.Location = new System.Drawing.Point(10, 213);
+            kommenttiLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             kommenttiLabel.Name = "kommenttiLabel";
-            kommenttiLabel.Size = new System.Drawing.Size(76, 17);
+            kommenttiLabel.Size = new System.Drawing.Size(58, 13);
             kommenttiLabel.TabIndex = 11;
             kommenttiLabel.Text = "kommentti:";
             // 
             // poyta_poytaIDLabel
             // 
             poyta_poytaIDLabel.AutoSize = true;
-            poyta_poytaIDLabel.Location = new System.Drawing.Point(14, 290);
+            poyta_poytaIDLabel.Location = new System.Drawing.Point(10, 236);
+            poyta_poytaIDLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             poyta_poytaIDLabel.Name = "poyta_poytaIDLabel";
-            poyta_poytaIDLabel.Size = new System.Drawing.Size(103, 17);
+            poyta_poytaIDLabel.Size = new System.Drawing.Size(79, 13);
             poyta_poytaIDLabel.TabIndex = 13;
             poyta_poytaIDLabel.Text = "poyta poyta ID:";
             // 
             // ruokalista_annosLabel
             // 
             ruokalista_annosLabel.AutoSize = true;
-            ruokalista_annosLabel.Location = new System.Drawing.Point(14, 318);
+            ruokalista_annosLabel.Location = new System.Drawing.Point(10, 258);
+            ruokalista_annosLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             ruokalista_annosLabel.Name = "ruokalista_annosLabel";
-            ruokalista_annosLabel.Size = new System.Drawing.Size(116, 17);
+            ruokalista_annosLabel.Size = new System.Drawing.Size(87, 13);
             ruokalista_annosLabel.TabIndex = 15;
             ruokalista_annosLabel.Text = "ruokalista annos:";
             // 
             // henkilokunta_idLabel
             // 
             henkilokunta_idLabel.AutoSize = true;
-            henkilokunta_idLabel.Location = new System.Drawing.Point(14, 346);
+            henkilokunta_idLabel.Location = new System.Drawing.Point(10, 281);
+            henkilokunta_idLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             henkilokunta_idLabel.Name = "henkilokunta_idLabel";
-            henkilokunta_idLabel.Size = new System.Drawing.Size(107, 17);
+            henkilokunta_idLabel.Size = new System.Drawing.Size(82, 13);
             henkilokunta_idLabel.TabIndex = 17;
             henkilokunta_idLabel.Text = "henkilokunta id:";
             // 
             // poytaNroLabel
             // 
             this.poytaNroLabel.AutoSize = true;
-            this.poytaNroLabel.Location = new System.Drawing.Point(42, 42);
-            this.poytaNroLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.poytaNroLabel.Location = new System.Drawing.Point(32, 34);
             this.poytaNroLabel.Name = "poytaNroLabel";
-            this.poytaNroLabel.Size = new System.Drawing.Size(96, 17);
+            this.poytaNroLabel.Size = new System.Drawing.Size(72, 13);
             this.poytaNroLabel.TabIndex = 0;
             this.poytaNroLabel.Text = "Pöytä numero";
             // 
             // poytanrotext
             // 
-            this.poytanrotext.Location = new System.Drawing.Point(184, 39);
-            this.poytanrotext.Margin = new System.Windows.Forms.Padding(4);
+            this.poytanrotext.Location = new System.Drawing.Point(138, 32);
             this.poytanrotext.Name = "poytanrotext";
-            this.poytanrotext.Size = new System.Drawing.Size(132, 22);
+            this.poytanrotext.Size = new System.Drawing.Size(100, 20);
             this.poytanrotext.TabIndex = 1;
             // 
             // poytapaikkaNrotext
             // 
-            this.poytapaikkaNrotext.Location = new System.Drawing.Point(184, 74);
-            this.poytapaikkaNrotext.Margin = new System.Windows.Forms.Padding(4);
+            this.poytapaikkaNrotext.Location = new System.Drawing.Point(138, 60);
             this.poytapaikkaNrotext.Name = "poytapaikkaNrotext";
-            this.poytapaikkaNrotext.Size = new System.Drawing.Size(132, 22);
+            this.poytapaikkaNrotext.Size = new System.Drawing.Size(100, 20);
             this.poytapaikkaNrotext.TabIndex = 2;
             // 
             // poytapaikkaNroLabel
             // 
             this.poytapaikkaNroLabel.AutoSize = true;
-            this.poytapaikkaNroLabel.Location = new System.Drawing.Point(52, 79);
-            this.poytapaikkaNroLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.poytapaikkaNroLabel.Location = new System.Drawing.Point(39, 64);
             this.poytapaikkaNroLabel.Name = "poytapaikkaNroLabel";
-            this.poytapaikkaNroLabel.Size = new System.Drawing.Size(86, 17);
+            this.poytapaikkaNroLabel.Size = new System.Drawing.Size(67, 13);
             this.poytapaikkaNroLabel.TabIndex = 3;
             this.poytapaikkaNroLabel.Text = "PöytäPaikka";
             // 
             // alkuruokaLabel
             // 
             this.alkuruokaLabel.AutoSize = true;
-            this.alkuruokaLabel.Location = new System.Drawing.Point(64, 114);
-            this.alkuruokaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.alkuruokaLabel.Location = new System.Drawing.Point(48, 93);
             this.alkuruokaLabel.Name = "alkuruokaLabel";
-            this.alkuruokaLabel.Size = new System.Drawing.Size(71, 17);
+            this.alkuruokaLabel.Size = new System.Drawing.Size(55, 13);
             this.alkuruokaLabel.TabIndex = 4;
             this.alkuruokaLabel.Text = "Alkuruoka";
             // 
             // alkuruokanrotext
             // 
-            this.alkuruokanrotext.Location = new System.Drawing.Point(184, 106);
-            this.alkuruokanrotext.Margin = new System.Windows.Forms.Padding(4);
+            this.alkuruokanrotext.Location = new System.Drawing.Point(138, 86);
             this.alkuruokanrotext.Name = "alkuruokanrotext";
-            this.alkuruokanrotext.Size = new System.Drawing.Size(132, 22);
+            this.alkuruokanrotext.Size = new System.Drawing.Size(100, 20);
             this.alkuruokanrotext.TabIndex = 5;
             // 
             // TilausSyottoTallenna
             // 
             this.TilausSyottoTallenna.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TilausSyottoTallenna.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.TilausSyottoTallenna.Location = new System.Drawing.Point(775, 484);
-            this.TilausSyottoTallenna.Margin = new System.Windows.Forms.Padding(4);
+            this.TilausSyottoTallenna.Location = new System.Drawing.Point(581, 393);
             this.TilausSyottoTallenna.Name = "TilausSyottoTallenna";
-            this.TilausSyottoTallenna.Size = new System.Drawing.Size(130, 60);
+            this.TilausSyottoTallenna.Size = new System.Drawing.Size(98, 49);
             this.TilausSyottoTallenna.TabIndex = 6;
             this.TilausSyottoTallenna.Text = "Tallenna";
             this.TilausSyottoTallenna.UseVisualStyleBackColor = true;
@@ -200,13 +198,13 @@
             // 
             this.palaaTarjoilijaNayttoon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.palaaTarjoilijaNayttoon.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.palaaTarjoilijaNayttoon.Location = new System.Drawing.Point(607, 484);
-            this.palaaTarjoilijaNayttoon.Margin = new System.Windows.Forms.Padding(4);
+            this.palaaTarjoilijaNayttoon.Location = new System.Drawing.Point(455, 393);
             this.palaaTarjoilijaNayttoon.Name = "palaaTarjoilijaNayttoon";
-            this.palaaTarjoilijaNayttoon.Size = new System.Drawing.Size(130, 60);
+            this.palaaTarjoilijaNayttoon.Size = new System.Drawing.Size(98, 49);
             this.palaaTarjoilijaNayttoon.TabIndex = 7;
             this.palaaTarjoilijaNayttoon.Text = "Palaa tarjoilija näyttöön";
             this.palaaTarjoilijaNayttoon.UseVisualStyleBackColor = true;
+            this.palaaTarjoilijaNayttoon.Click += new System.EventHandler(this.palaaTarjoilijaNayttoon_Click_1);
             // 
             // ravintolaDataSet1
             // 
@@ -260,7 +258,7 @@
             this.tilausBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.tilausBindingNavigator.Name = "tilausBindingNavigator";
             this.tilausBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.tilausBindingNavigator.Size = new System.Drawing.Size(941, 27);
+            this.tilausBindingNavigator.Size = new System.Drawing.Size(706, 27);
             this.tilausBindingNavigator.TabIndex = 8;
             this.tilausBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -276,7 +274,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -317,7 +315,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(38, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
@@ -361,41 +359,46 @@
             // tilausIDTextBox
             // 
             this.tilausIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tilausBindingSource, "tilausID", true));
-            this.tilausIDTextBox.Location = new System.Drawing.Point(136, 231);
+            this.tilausIDTextBox.Location = new System.Drawing.Point(102, 188);
+            this.tilausIDTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tilausIDTextBox.Name = "tilausIDTextBox";
-            this.tilausIDTextBox.Size = new System.Drawing.Size(100, 22);
+            this.tilausIDTextBox.Size = new System.Drawing.Size(76, 20);
             this.tilausIDTextBox.TabIndex = 10;
             // 
             // kommenttiTextBox
             // 
             this.kommenttiTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tilausBindingSource, "kommentti", true));
-            this.kommenttiTextBox.Location = new System.Drawing.Point(136, 259);
+            this.kommenttiTextBox.Location = new System.Drawing.Point(102, 210);
+            this.kommenttiTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kommenttiTextBox.Name = "kommenttiTextBox";
-            this.kommenttiTextBox.Size = new System.Drawing.Size(100, 22);
+            this.kommenttiTextBox.Size = new System.Drawing.Size(76, 20);
             this.kommenttiTextBox.TabIndex = 12;
             // 
             // poyta_poytaIDTextBox
             // 
             this.poyta_poytaIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tilausBindingSource, "poyta_poytaID", true));
-            this.poyta_poytaIDTextBox.Location = new System.Drawing.Point(136, 287);
+            this.poyta_poytaIDTextBox.Location = new System.Drawing.Point(102, 233);
+            this.poyta_poytaIDTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.poyta_poytaIDTextBox.Name = "poyta_poytaIDTextBox";
-            this.poyta_poytaIDTextBox.Size = new System.Drawing.Size(100, 22);
+            this.poyta_poytaIDTextBox.Size = new System.Drawing.Size(76, 20);
             this.poyta_poytaIDTextBox.TabIndex = 14;
             // 
             // ruokalista_annosTextBox
             // 
             this.ruokalista_annosTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tilausBindingSource, "ruokalista_annos", true));
-            this.ruokalista_annosTextBox.Location = new System.Drawing.Point(136, 315);
+            this.ruokalista_annosTextBox.Location = new System.Drawing.Point(102, 256);
+            this.ruokalista_annosTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ruokalista_annosTextBox.Name = "ruokalista_annosTextBox";
-            this.ruokalista_annosTextBox.Size = new System.Drawing.Size(100, 22);
+            this.ruokalista_annosTextBox.Size = new System.Drawing.Size(76, 20);
             this.ruokalista_annosTextBox.TabIndex = 16;
             // 
             // henkilokunta_idTextBox
             // 
             this.henkilokunta_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tilausBindingSource, "henkilokunta_id", true));
-            this.henkilokunta_idTextBox.Location = new System.Drawing.Point(136, 343);
+            this.henkilokunta_idTextBox.Location = new System.Drawing.Point(102, 279);
+            this.henkilokunta_idTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.henkilokunta_idTextBox.Name = "henkilokunta_idTextBox";
-            this.henkilokunta_idTextBox.Size = new System.Drawing.Size(100, 22);
+            this.henkilokunta_idTextBox.Size = new System.Drawing.Size(76, 20);
             this.henkilokunta_idTextBox.TabIndex = 18;
             // 
             // tilausDataGridView
@@ -410,10 +413,11 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewImageColumn1});
             this.tilausDataGridView.DataSource = this.tilausBindingSource;
-            this.tilausDataGridView.Location = new System.Drawing.Point(272, 231);
+            this.tilausDataGridView.Location = new System.Drawing.Point(204, 188);
+            this.tilausDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tilausDataGridView.Name = "tilausDataGridView";
             this.tilausDataGridView.RowTemplate.Height = 24;
-            this.tilausDataGridView.Size = new System.Drawing.Size(633, 220);
+            this.tilausDataGridView.Size = new System.Drawing.Size(475, 179);
             this.tilausDataGridView.TabIndex = 19;
             // 
             // dataGridViewTextBoxColumn1
@@ -454,9 +458,9 @@
             // 
             // TilausSyotto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(941, 564);
+            this.ClientSize = new System.Drawing.Size(706, 458);
             this.Controls.Add(this.tilausDataGridView);
             this.Controls.Add(tilausIDLabel);
             this.Controls.Add(this.tilausIDTextBox);
@@ -477,7 +481,6 @@
             this.Controls.Add(this.poytapaikkaNrotext);
             this.Controls.Add(this.poytanrotext);
             this.Controls.Add(this.poytaNroLabel);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TilausSyotto";
             this.Text = "TilausSyotto";
             this.Load += new System.EventHandler(this.TilausSyotto_Load);
