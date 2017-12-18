@@ -70,6 +70,18 @@
     <Compile Include="Esimies.Designer.cs">
       <DependentUpon>Esimies.cs</DependentUpon>
     </Compile>
+    <Compile Include="lasku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lasku.Designer.cs">
+      <DependentUpon>lasku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListanLuku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListanLuku.Designer.cs">
+      <DependentUpon>ListanLuku.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +105,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RavintolaDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Ruokalista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ruokalista.Designer.cs">
+      <DependentUpon>Ruokalista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RuokalistaMuokkaus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RuokalistaMuokkaus.Designer.cs">
+      <DependentUpon>RuokalistaMuokkaus.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tarjoilija.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +135,12 @@
     <EmbeddedResource Include="Esimies.resx">
       <DependentUpon>Esimies.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="lasku.resx">
+      <DependentUpon>lasku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListanLuku.resx">
+      <DependentUpon>ListanLuku.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginUI.resx">
       <DependentUpon>LoginUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -123,6 +153,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Ruokalista.resx">
+      <DependentUpon>Ruokalista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RuokalistaMuokkaus.resx">
+      <DependentUpon>RuokalistaMuokkaus.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tarjoilija.resx">
       <DependentUpon>Tarjoilija.cs</DependentUpon>
     </EmbeddedResource>

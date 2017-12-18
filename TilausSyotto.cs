@@ -73,5 +73,30 @@ namespace Ravintolatilaus
             //con.Open();
 
         }
+
+        private void tilausBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.tilausBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.ravintolaDataSet1);
+
+        }
+
+        private void TilausSyotto_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'ravintolaDataSet1.tilaus' table. You can move, or remove it, as needed.
+            this.tilausTableAdapter.Fill(this.ravintolaDataSet1.tilaus);
+            // TODO: This line of code loads data into the 'ravintolaDataSet1.tilaus' table. You can move, or remove it, as needed.
+            this.tilausTableAdapter.Fill(this.ravintolaDataSet1.tilaus);
+
+        }
+
+        private void tilausBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.tilausBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.ravintolaDataSet1);
+
+        }
     }
 }
