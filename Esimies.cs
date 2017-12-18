@@ -39,7 +39,7 @@ namespace Ravintolatilaus
         }
 
         // Tarkastele pöytävaraustilannetta
-        public void Poydat_Click(object sender, EventArgs e)
+        private void Poydat_Click(object sender, EventArgs e)
         {
             ListanLuku listanLuku = new ListanLuku();
             this.Close();

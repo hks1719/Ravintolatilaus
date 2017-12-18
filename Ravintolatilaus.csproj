@@ -70,6 +70,11 @@
     <Compile Include="Esimies.Designer.cs">
       <DependentUpon>Esimies.cs</DependentUpon>
     </Compile>
+    <Compile Include="RavintolaDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RavintolaDataSet21.xsd</DependentUpon>
+    </Compile>
     <Compile Include="TilausLista.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +205,17 @@
     </None>
     <None Include="RavintolaDataSet1.xss">
       <DependentUpon>RavintolaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="RavintolaDataSet21.xsc">
+      <DependentUpon>RavintolaDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="RavintolaDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RavintolaDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RavintolaDataSet21.xss">
+      <DependentUpon>RavintolaDataSet21.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
