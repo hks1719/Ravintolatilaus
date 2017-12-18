@@ -21,7 +21,10 @@ namespace Ravintolatilaus
 
             //esimiespainike
             pomo.Click += pomo_Click;
-   
+
+            //kokkipainike
+            //kokkiPainike.Click += kokkiPainike_Click;
+
         }
 
         //tarjoilijapainike
@@ -50,6 +53,13 @@ namespace Ravintolatilaus
             //Tarjoilija tarjoilija = new Tarjoilija();
             //this.Close();
             //tarjoilija.Show();
+        }
+
+        private void kokkiPainike_Click(object sender, EventArgs e)
+        {
+            Kokki kokki = new Kokki();
+            this.Close();
+            kokki.Show();
         }
     }
 }
