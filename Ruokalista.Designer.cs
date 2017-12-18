@@ -55,6 +55,7 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ruokalistanMuokkaus = new System.Windows.Forms.Button();
+            this.paluuEsimiehenNayttoon = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ravintolaDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ruokalistaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ruokalistaBindingNavigator)).BeginInit();
@@ -281,11 +282,23 @@
             this.ruokalistanMuokkaus.Text = "Ruokalistan muokkaus";
             this.ruokalistanMuokkaus.UseVisualStyleBackColor = true;
             // 
+            // paluuEsimiehenNayttoon
+            // 
+            this.paluuEsimiehenNayttoon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paluuEsimiehenNayttoon.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.paluuEsimiehenNayttoon.Location = new System.Drawing.Point(160, 414);
+            this.paluuEsimiehenNayttoon.Name = "paluuEsimiehenNayttoon";
+            this.paluuEsimiehenNayttoon.Size = new System.Drawing.Size(125, 85);
+            this.paluuEsimiehenNayttoon.TabIndex = 4;
+            this.paluuEsimiehenNayttoon.Text = "Paluu esimiehen näyttöön";
+            this.paluuEsimiehenNayttoon.UseVisualStyleBackColor = true;
+            // 
             // Ruokalista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(661, 510);
+            this.Controls.Add(this.paluuEsimiehenNayttoon);
             this.Controls.Add(this.ruokalistanMuokkaus);
             this.Controls.Add(this.ruokalistaDataGridView);
             this.Controls.Add(this.ruokalistaBindingNavigator);
@@ -331,5 +344,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.Button ruokalistanMuokkaus;
+        private System.Windows.Forms.Button paluuEsimiehenNayttoon;
     }
 }
