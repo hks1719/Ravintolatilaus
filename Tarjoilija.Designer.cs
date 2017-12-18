@@ -37,18 +37,19 @@
             // 
             // uusiTilaus
             // 
-            this.uusiTilaus.Location = new System.Drawing.Point(132, 45);
+            this.uusiTilaus.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.uusiTilaus.Location = new System.Drawing.Point(70, 45);
             this.uusiTilaus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.uusiTilaus.Name = "uusiTilaus";
             this.uusiTilaus.Size = new System.Drawing.Size(153, 94);
             this.uusiTilaus.TabIndex = 0;
             this.uusiTilaus.Text = "Uusi tilaus";
-            this.uusiTilaus.UseVisualStyleBackColor = true;
+            this.uusiTilaus.UseVisualStyleBackColor = false;
             this.uusiTilaus.Click += new System.EventHandler(this.uusiTilaus_Click);
             // 
             // ruokalista
             // 
-            this.ruokalista.Location = new System.Drawing.Point(327, 45);
+            this.ruokalista.Location = new System.Drawing.Point(289, 45);
             this.ruokalista.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ruokalista.Name = "ruokalista";
             this.ruokalista.Size = new System.Drawing.Size(153, 94);
@@ -58,7 +59,7 @@
             // 
             // lasku
             // 
-            this.lasku.Location = new System.Drawing.Point(132, 191);
+            this.lasku.Location = new System.Drawing.Point(70, 191);
             this.lasku.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lasku.Name = "lasku";
             this.lasku.Size = new System.Drawing.Size(153, 94);
@@ -68,7 +69,7 @@
             // 
             // poytavaraukset
             // 
-            this.poytavaraukset.Location = new System.Drawing.Point(327, 191);
+            this.poytavaraukset.Location = new System.Drawing.Point(289, 191);
             this.poytavaraukset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.poytavaraukset.Name = "poytavaraukset";
             this.poytavaraukset.Size = new System.Drawing.Size(153, 94);
@@ -78,7 +79,7 @@
             // 
             // paluuAloitusnayttoon
             // 
-            this.paluuAloitusnayttoon.Location = new System.Drawing.Point(327, 304);
+            this.paluuAloitusnayttoon.Location = new System.Drawing.Point(467, 313);
             this.paluuAloitusnayttoon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.paluuAloitusnayttoon.Name = "paluuAloitusnayttoon";
             this.paluuAloitusnayttoon.Size = new System.Drawing.Size(153, 94);
