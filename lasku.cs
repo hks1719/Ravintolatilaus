@@ -25,5 +25,20 @@ namespace Ravintolatilaus
             this.Close();
             tarjoilija.Show();
         }
+
+        private void tilausBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.tilausBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.ravintolaDataSet1);
+
+        }
+
+        private void lasku_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'ravintolaDataSet1.tilaus' table. You can move, or remove it, as needed.
+            this.tilausTableAdapter.Fill(this.ravintolaDataSet1.tilaus);
+
+        }
     }
 }
