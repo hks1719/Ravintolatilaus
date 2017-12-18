@@ -10,10 +10,7 @@ using System.Windows.Forms;
 namespace Ravintolatilaus
 {
     public partial class AloitusUI : Form
-    {
-        Esimies esimies = new Esimies();
-
-        
+    { 
 
         public AloitusUI()
         {
@@ -21,6 +18,9 @@ namespace Ravintolatilaus
 
             //tarjoilijapainike
             tarjoilija.Click += Tarjoilija_Click;
+
+            //esimiespainike
+            pomo.Click += pomo_Click;
    
         }
 
@@ -39,6 +39,8 @@ namespace Ravintolatilaus
 
         private void pomo_Click(object sender, EventArgs e)
         {
+            Esimies esimies = new Esimies();
+            this.Close();
             esimies.Show();
         }
 
