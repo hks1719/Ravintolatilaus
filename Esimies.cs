@@ -17,7 +17,9 @@ namespace Ravintolatilaus
             InitializeComponent();
         }
 
-        // SQL - yhteyden avaus funktio 
+        lluku lluku = new lluku();
+
+        // SQL - yhteyden avaus funktio - ei toiminut tällä??
         //public void Avaayhteys()
         //{
         //    SqlConnection con = new SqlConnection();
@@ -40,55 +42,7 @@ namespace Ravintolatilaus
         // Tarkastele pöytävaraustilannetta
         public void Poydat_Click(object sender, EventArgs e)
         {
-           
-            // Tilapäinen säilytyspaikka 
-            List<string> tempList = new List<string>();
-            // Nollataan lukija
-            SqlDataReader reader = null;
-            // Nollataan käsky
-            SqlCommand cmd = null;
-
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Ravintola.mdf;Integrated Security=True;Connect Timeout=30";
-            con.Open();
-
-            // SQL-käsky muuttujaan 
-            string CmdText = "SELECT * FROM poyta";
-
-            // SQL-käsky ja yhteys auki
-            cmd = new SqlCommand(CmdText, con);
-
-            // Luetaan tietokantataulun tiedot
-            reader = cmd.ExecuteReader();
-
-            while (reader.Read())
-            {
-                if (!reader.IsDBNull(0))
-                {
-                    tempList.Add(reader[0].ToString() + " " + reader[1].ToString());
-                }
-            }
-            // Suljetaan lukija
-            reader.Close();
-            // Suljetaan tietokantayhteys
-            con.Close();
-            // Sijoitetaan String-tyyppiseksi muunnetut tietokantahaun tulokset taulukkoon 
-            string[] poytatilanne = tempList.ToArray();
-
-            // Jatkuu tästä siten että taulukon sisältö saadaan ListanLuku-ikkunaan auki
-            // Luodaan tulostusta varten meny-muuttuja, johon sijoitetaan funktion avulla 
-            String meny = "";
-            meny = ListaLuku(poytatilanne);
-
-            ListanLuku lluku = new ListanLuku();
-            lluku.Show();
-
-        }
-
-        // Sijoitetaan poytatilanne taulukon tiedot joinilla string-tyyppiseen muuttujaan, jonka arvo palautetaan 
-        public string ListaLuku(string[] poytatilanne)
-        {
-            return String.Join("", poytatilanne);
+            lluku.Show();   
         }
     }
     }
