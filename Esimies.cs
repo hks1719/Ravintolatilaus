@@ -24,7 +24,10 @@ namespace Ravintolatilaus
         // Takaisin päävalikkoon 
         private void Takaisin_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            AloitusUI aloitusUI = new AloitusUI();
+            this.Close();
+            aloitusUI.Show();
+            
         }
 
         // Hae tilaukset
