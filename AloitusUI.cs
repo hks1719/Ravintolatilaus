@@ -41,5 +41,12 @@ namespace Ravintolatilaus
         {
             esimies.Show();
         }
+
+        private void tarjoilija_Click_1(object sender, EventArgs e)
+        {
+                        Tarjoilija tarjoilija = new Tarjoilija();
+            this.Close();
+            tarjoilija.Show();
+        }
     }
 }
