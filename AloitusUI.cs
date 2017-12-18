@@ -44,9 +44,10 @@ namespace Ravintolatilaus
 
         private void tarjoilija_Click_1(object sender, EventArgs e)
         {
-                        Tarjoilija tarjoilija = new Tarjoilija();
-            this.Close();
-            tarjoilija.Show();
+            //Jos nämä koodit ovat aktiiviset, tulee tarjoilijanäyttö kahteen kertaan esille, kokonaan tätä ei voi poistaa kun tulee error ilmoitusta.
+            //Tarjoilija tarjoilija = new Tarjoilija();
+            //this.Close();
+            //tarjoilija.Show();
         }
     }
 }

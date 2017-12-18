@@ -14,6 +14,14 @@ namespace Ravintolatilaus
         public RuokalistaMuokkaus()
         {
             InitializeComponent();
+            paluuRuokalistaNaytolle.Click += PaluuRuokalistaNaytolle_Click;
+        }
+
+        private void PaluuRuokalistaNaytolle_Click(object sender, EventArgs e)
+        {
+            Ruokalista ruokalista = new Ruokalista();
+            this.Close();
+            ruokalista.Show();
         }
 
         private void ruokalistaBindingNavigatorSaveItem_Click(object sender, EventArgs e)
