@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Ravintolatilaus
 {
-    public partial class lasku : Form
+    public partial class tilaus : Form
     {
-        public lasku()
+        public tilaus()
         {
             InitializeComponent();
 

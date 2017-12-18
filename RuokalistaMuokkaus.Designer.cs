@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RuokalistaMuokkaus));
             System.Windows.Forms.Label annosLabel;
             System.Windows.Forms.Label annosNimiLabel;
             System.Windows.Forms.Label kuvausLabel;
             System.Windows.Forms.Label hintaLabel;
             System.Windows.Forms.Label henkilokunta_idLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RuokalistaMuokkaus));
             this.ravintolaDataSet1 = new Ravintolatilaus.RavintolaDataSet1();
             this.ruokalistaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ruokalistaTableAdapter = new Ravintolatilaus.RavintolaDataSet1TableAdapters.ruokalistaTableAdapter();
             this.tableAdapterManager = new Ravintolatilaus.RavintolaDataSet1TableAdapters.TableAdapterManager();
             this.ruokalistaBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.ruokalistaBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.annosTextBox = new System.Windows.Forms.TextBox();
             this.annosNimiTextBox = new System.Windows.Forms.TextBox();
@@ -63,6 +63,7 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paluuRuokalistaNaytolle = new System.Windows.Forms.Button();
             annosLabel = new System.Windows.Forms.Label();
             annosNimiLabel = new System.Windows.Forms.Label();
             kuvausLabel = new System.Windows.Forms.Label();
@@ -74,6 +75,51 @@
             this.ruokalistaBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ruokalistaDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // annosLabel
+            // 
+            annosLabel.AutoSize = true;
+            annosLabel.Location = new System.Drawing.Point(15, 76);
+            annosLabel.Name = "annosLabel";
+            annosLabel.Size = new System.Drawing.Size(51, 17);
+            annosLabel.TabIndex = 1;
+            annosLabel.Text = "annos:";
+            // 
+            // annosNimiLabel
+            // 
+            annosNimiLabel.AutoSize = true;
+            annosNimiLabel.Location = new System.Drawing.Point(15, 104);
+            annosNimiLabel.Name = "annosNimiLabel";
+            annosNimiLabel.Size = new System.Drawing.Size(82, 17);
+            annosNimiLabel.TabIndex = 3;
+            annosNimiLabel.Text = "annos Nimi:";
+            // 
+            // kuvausLabel
+            // 
+            kuvausLabel.AutoSize = true;
+            kuvausLabel.Location = new System.Drawing.Point(15, 132);
+            kuvausLabel.Name = "kuvausLabel";
+            kuvausLabel.Size = new System.Drawing.Size(57, 17);
+            kuvausLabel.TabIndex = 5;
+            kuvausLabel.Text = "kuvaus:";
+            // 
+            // hintaLabel
+            // 
+            hintaLabel.AutoSize = true;
+            hintaLabel.Location = new System.Drawing.Point(15, 160);
+            hintaLabel.Name = "hintaLabel";
+            hintaLabel.Size = new System.Drawing.Size(43, 17);
+            hintaLabel.TabIndex = 7;
+            hintaLabel.Text = "hinta:";
+            // 
+            // henkilokunta_idLabel
+            // 
+            henkilokunta_idLabel.AutoSize = true;
+            henkilokunta_idLabel.Location = new System.Drawing.Point(15, 188);
+            henkilokunta_idLabel.Name = "henkilokunta_idLabel";
+            henkilokunta_idLabel.Size = new System.Drawing.Size(107, 17);
+            henkilokunta_idLabel.TabIndex = 9;
+            henkilokunta_idLabel.Text = "henkilokunta id:";
             // 
             // ravintolaDataSet1
             // 
@@ -131,13 +177,38 @@
             this.ruokalistaBindingNavigator.TabIndex = 0;
             this.ruokalistaBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 22);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -146,13 +217,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 22);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -163,17 +234,10 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 20);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -195,44 +259,17 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // ruokalistaBindingNavigatorSaveItem
             // 
             this.ruokalistaBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.ruokalistaBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("ruokalistaBindingNavigatorSaveItem.Image")));
             this.ruokalistaBindingNavigatorSaveItem.Name = "ruokalistaBindingNavigatorSaveItem";
-            this.ruokalistaBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.ruokalistaBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
             this.ruokalistaBindingNavigatorSaveItem.Text = "Save Data";
             this.ruokalistaBindingNavigatorSaveItem.Click += new System.EventHandler(this.ruokalistaBindingNavigatorSaveItem_Click);
-            // 
-            // annosLabel
-            // 
-            annosLabel.AutoSize = true;
-            annosLabel.Location = new System.Drawing.Point(15, 76);
-            annosLabel.Name = "annosLabel";
-            annosLabel.Size = new System.Drawing.Size(51, 17);
-            annosLabel.TabIndex = 1;
-            annosLabel.Text = "annos:";
             // 
             // annosTextBox
             // 
@@ -242,15 +279,6 @@
             this.annosTextBox.Size = new System.Drawing.Size(100, 22);
             this.annosTextBox.TabIndex = 2;
             // 
-            // annosNimiLabel
-            // 
-            annosNimiLabel.AutoSize = true;
-            annosNimiLabel.Location = new System.Drawing.Point(15, 104);
-            annosNimiLabel.Name = "annosNimiLabel";
-            annosNimiLabel.Size = new System.Drawing.Size(82, 17);
-            annosNimiLabel.TabIndex = 3;
-            annosNimiLabel.Text = "annos Nimi:";
-            // 
             // annosNimiTextBox
             // 
             this.annosNimiTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ruokalistaBindingSource, "annosNimi", true));
@@ -258,15 +286,6 @@
             this.annosNimiTextBox.Name = "annosNimiTextBox";
             this.annosNimiTextBox.Size = new System.Drawing.Size(100, 22);
             this.annosNimiTextBox.TabIndex = 4;
-            // 
-            // kuvausLabel
-            // 
-            kuvausLabel.AutoSize = true;
-            kuvausLabel.Location = new System.Drawing.Point(15, 132);
-            kuvausLabel.Name = "kuvausLabel";
-            kuvausLabel.Size = new System.Drawing.Size(57, 17);
-            kuvausLabel.TabIndex = 5;
-            kuvausLabel.Text = "kuvaus:";
             // 
             // kuvausTextBox
             // 
@@ -276,15 +295,6 @@
             this.kuvausTextBox.Size = new System.Drawing.Size(100, 22);
             this.kuvausTextBox.TabIndex = 6;
             // 
-            // hintaLabel
-            // 
-            hintaLabel.AutoSize = true;
-            hintaLabel.Location = new System.Drawing.Point(15, 160);
-            hintaLabel.Name = "hintaLabel";
-            hintaLabel.Size = new System.Drawing.Size(43, 17);
-            hintaLabel.TabIndex = 7;
-            hintaLabel.Text = "hinta:";
-            // 
             // hintaTextBox
             // 
             this.hintaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ruokalistaBindingSource, "hinta", true));
@@ -292,15 +302,6 @@
             this.hintaTextBox.Name = "hintaTextBox";
             this.hintaTextBox.Size = new System.Drawing.Size(100, 22);
             this.hintaTextBox.TabIndex = 8;
-            // 
-            // henkilokunta_idLabel
-            // 
-            henkilokunta_idLabel.AutoSize = true;
-            henkilokunta_idLabel.Location = new System.Drawing.Point(15, 188);
-            henkilokunta_idLabel.Name = "henkilokunta_idLabel";
-            henkilokunta_idLabel.Size = new System.Drawing.Size(107, 17);
-            henkilokunta_idLabel.TabIndex = 9;
-            henkilokunta_idLabel.Text = "henkilokunta id:";
             // 
             // henkilokunta_idTextBox
             // 
@@ -324,7 +325,7 @@
             this.ruokalistaDataGridView.Location = new System.Drawing.Point(270, 57);
             this.ruokalistaDataGridView.Name = "ruokalistaDataGridView";
             this.ruokalistaDataGridView.RowTemplate.Height = 24;
-            this.ruokalistaDataGridView.Size = new System.Drawing.Size(552, 487);
+            this.ruokalistaDataGridView.Size = new System.Drawing.Size(552, 417);
             this.ruokalistaDataGridView.TabIndex = 11;
             // 
             // dataGridViewTextBoxColumn1
@@ -357,11 +358,23 @@
             this.dataGridViewTextBoxColumn5.HeaderText = "henkilokunta_id";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
+            // paluuRuokalistaNaytolle
+            // 
+            this.paluuRuokalistaNaytolle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paluuRuokalistaNaytolle.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.paluuRuokalistaNaytolle.Location = new System.Drawing.Point(667, 487);
+            this.paluuRuokalistaNaytolle.Name = "paluuRuokalistaNaytolle";
+            this.paluuRuokalistaNaytolle.Size = new System.Drawing.Size(155, 85);
+            this.paluuRuokalistaNaytolle.TabIndex = 13;
+            this.paluuRuokalistaNaytolle.Text = "Paluu Ruokalista näyttöön";
+            this.paluuRuokalistaNaytolle.UseVisualStyleBackColor = true;
+            // 
             // RuokalistaMuokkaus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(870, 584);
+            this.Controls.Add(this.paluuRuokalistaNaytolle);
             this.Controls.Add(this.ruokalistaDataGridView);
             this.Controls.Add(annosLabel);
             this.Controls.Add(this.annosTextBox);
@@ -418,5 +431,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.Button paluuRuokalistaNaytolle;
     }
 }

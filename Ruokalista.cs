@@ -17,7 +17,15 @@ namespace Ravintolatilaus
 
             paluuTarjoilijaNayttoon.Click += PaluuTarjoilijaNayttoon_Click;
             ruokalistanMuokkaus.Click += RuokalistanMuokkaus_Click;
+            paluuEsimiehenNayttoon.Click += PaluuEsimiehenNayttoon_Click;
 
+        }
+
+        private void PaluuEsimiehenNayttoon_Click(object sender, EventArgs e)
+        {
+            Esimies esimies = new Esimies();
+            this.Close();
+            esimies.Show();
         }
 
         private void RuokalistanMuokkaus_Click(object sender, EventArgs e)

@@ -17,7 +17,7 @@ namespace Ravintolatilaus
         {
             InitializeComponent();
             //painikkeet
-            lasku.Click += Lasku_Click;
+            tilaus.Click += tilaus_Click;
             paluuAloitusnayttoon.Click += PaluuAloitusnayttoon_Click;
             ruokalista.Click += Ruokalista_Click;
 
@@ -40,12 +40,12 @@ namespace Ravintolatilaus
             aloitusUI.Show();
         }
 
-        //lasku painike
-        private void Lasku_Click(object sender, EventArgs e)
+        //tilaus painike
+        private void tilaus_Click(object sender, EventArgs e)
         {
-            lasku lasku = new lasku();
+            tilaus tilaus = new tilaus();
             this.Close();
-            lasku.Show();
+            tilaus.Show();
         }
 
         public Tarjoilija(Tarjoilija tarjoilija)

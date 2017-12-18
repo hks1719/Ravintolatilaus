@@ -1,6 +1,6 @@
 ﻿namespace Ravintolatilaus
 {
-    partial class lasku
+    partial class tilaus
     {
         /// <summary>
         /// Required designer variable.
@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(lasku));
             System.Windows.Forms.Label tilausIDLabel;
             System.Windows.Forms.Label kommenttiLabel;
             System.Windows.Forms.Label poyta_poytaIDLabel;
             System.Windows.Forms.Label ruokalista_annosLabel;
             System.Windows.Forms.Label henkilokunta_idLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tilaus));
             this.paluuTarjoilijaNayttoon = new System.Windows.Forms.Button();
             this.ravintolaDataSet1 = new Ravintolatilaus.RavintolaDataSet1();
             this.tilausBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tilausTableAdapter = new Ravintolatilaus.RavintolaDataSet1TableAdapters.tilausTableAdapter();
             this.tableAdapterManager = new Ravintolatilaus.RavintolaDataSet1TableAdapters.TableAdapterManager();
             this.tilausBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.tilausBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.tilausIDTextBox = new System.Windows.Forms.TextBox();
             this.kommenttiTextBox = new System.Windows.Forms.TextBox();
@@ -76,6 +76,51 @@
             this.tilausBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tilausDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // tilausIDLabel
+            // 
+            tilausIDLabel.AutoSize = true;
+            tilausIDLabel.Location = new System.Drawing.Point(39, 44);
+            tilausIDLabel.Name = "tilausIDLabel";
+            tilausIDLabel.Size = new System.Drawing.Size(62, 17);
+            tilausIDLabel.TabIndex = 2;
+            tilausIDLabel.Text = "tilaus ID:";
+            // 
+            // kommenttiLabel
+            // 
+            kommenttiLabel.AutoSize = true;
+            kommenttiLabel.Location = new System.Drawing.Point(39, 72);
+            kommenttiLabel.Name = "kommenttiLabel";
+            kommenttiLabel.Size = new System.Drawing.Size(76, 17);
+            kommenttiLabel.TabIndex = 4;
+            kommenttiLabel.Text = "kommentti:";
+            // 
+            // poyta_poytaIDLabel
+            // 
+            poyta_poytaIDLabel.AutoSize = true;
+            poyta_poytaIDLabel.Location = new System.Drawing.Point(39, 100);
+            poyta_poytaIDLabel.Name = "poyta_poytaIDLabel";
+            poyta_poytaIDLabel.Size = new System.Drawing.Size(103, 17);
+            poyta_poytaIDLabel.TabIndex = 6;
+            poyta_poytaIDLabel.Text = "poyta poyta ID:";
+            // 
+            // ruokalista_annosLabel
+            // 
+            ruokalista_annosLabel.AutoSize = true;
+            ruokalista_annosLabel.Location = new System.Drawing.Point(39, 128);
+            ruokalista_annosLabel.Name = "ruokalista_annosLabel";
+            ruokalista_annosLabel.Size = new System.Drawing.Size(116, 17);
+            ruokalista_annosLabel.TabIndex = 8;
+            ruokalista_annosLabel.Text = "ruokalista annos:";
+            // 
+            // henkilokunta_idLabel
+            // 
+            henkilokunta_idLabel.AutoSize = true;
+            henkilokunta_idLabel.Location = new System.Drawing.Point(39, 156);
+            henkilokunta_idLabel.Name = "henkilokunta_idLabel";
+            henkilokunta_idLabel.Size = new System.Drawing.Size(107, 17);
+            henkilokunta_idLabel.TabIndex = 10;
+            henkilokunta_idLabel.Text = "henkilokunta id:";
             // 
             // paluuTarjoilijaNayttoon
             // 
@@ -142,13 +187,38 @@
             this.tilausBindingNavigator.TabIndex = 2;
             this.tilausBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 22);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -157,13 +227,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 22);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -174,17 +244,10 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 20);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -206,44 +269,17 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // tilausBindingNavigatorSaveItem
             // 
             this.tilausBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tilausBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("tilausBindingNavigatorSaveItem.Image")));
             this.tilausBindingNavigatorSaveItem.Name = "tilausBindingNavigatorSaveItem";
-            this.tilausBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.tilausBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
             this.tilausBindingNavigatorSaveItem.Text = "Save Data";
             this.tilausBindingNavigatorSaveItem.Click += new System.EventHandler(this.tilausBindingNavigatorSaveItem_Click);
-            // 
-            // tilausIDLabel
-            // 
-            tilausIDLabel.AutoSize = true;
-            tilausIDLabel.Location = new System.Drawing.Point(39, 44);
-            tilausIDLabel.Name = "tilausIDLabel";
-            tilausIDLabel.Size = new System.Drawing.Size(62, 17);
-            tilausIDLabel.TabIndex = 2;
-            tilausIDLabel.Text = "tilaus ID:";
             // 
             // tilausIDTextBox
             // 
@@ -253,15 +289,6 @@
             this.tilausIDTextBox.Size = new System.Drawing.Size(100, 22);
             this.tilausIDTextBox.TabIndex = 3;
             // 
-            // kommenttiLabel
-            // 
-            kommenttiLabel.AutoSize = true;
-            kommenttiLabel.Location = new System.Drawing.Point(39, 72);
-            kommenttiLabel.Name = "kommenttiLabel";
-            kommenttiLabel.Size = new System.Drawing.Size(76, 17);
-            kommenttiLabel.TabIndex = 4;
-            kommenttiLabel.Text = "kommentti:";
-            // 
             // kommenttiTextBox
             // 
             this.kommenttiTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tilausBindingSource, "kommentti", true));
@@ -269,15 +296,6 @@
             this.kommenttiTextBox.Name = "kommenttiTextBox";
             this.kommenttiTextBox.Size = new System.Drawing.Size(100, 22);
             this.kommenttiTextBox.TabIndex = 5;
-            // 
-            // poyta_poytaIDLabel
-            // 
-            poyta_poytaIDLabel.AutoSize = true;
-            poyta_poytaIDLabel.Location = new System.Drawing.Point(39, 100);
-            poyta_poytaIDLabel.Name = "poyta_poytaIDLabel";
-            poyta_poytaIDLabel.Size = new System.Drawing.Size(103, 17);
-            poyta_poytaIDLabel.TabIndex = 6;
-            poyta_poytaIDLabel.Text = "poyta poyta ID:";
             // 
             // poyta_poytaIDTextBox
             // 
@@ -287,15 +305,6 @@
             this.poyta_poytaIDTextBox.Size = new System.Drawing.Size(100, 22);
             this.poyta_poytaIDTextBox.TabIndex = 7;
             // 
-            // ruokalista_annosLabel
-            // 
-            ruokalista_annosLabel.AutoSize = true;
-            ruokalista_annosLabel.Location = new System.Drawing.Point(39, 128);
-            ruokalista_annosLabel.Name = "ruokalista_annosLabel";
-            ruokalista_annosLabel.Size = new System.Drawing.Size(116, 17);
-            ruokalista_annosLabel.TabIndex = 8;
-            ruokalista_annosLabel.Text = "ruokalista annos:";
-            // 
             // ruokalista_annosTextBox
             // 
             this.ruokalista_annosTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tilausBindingSource, "ruokalista_annos", true));
@@ -303,15 +312,6 @@
             this.ruokalista_annosTextBox.Name = "ruokalista_annosTextBox";
             this.ruokalista_annosTextBox.Size = new System.Drawing.Size(100, 22);
             this.ruokalista_annosTextBox.TabIndex = 9;
-            // 
-            // henkilokunta_idLabel
-            // 
-            henkilokunta_idLabel.AutoSize = true;
-            henkilokunta_idLabel.Location = new System.Drawing.Point(39, 156);
-            henkilokunta_idLabel.Name = "henkilokunta_idLabel";
-            henkilokunta_idLabel.Size = new System.Drawing.Size(107, 17);
-            henkilokunta_idLabel.TabIndex = 10;
-            henkilokunta_idLabel.Text = "henkilokunta id:";
             // 
             // henkilokunta_idTextBox
             // 
@@ -375,11 +375,11 @@
             this.dataGridViewImageColumn1.HeaderText = "auki";
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             // 
-            // lasku
+            // tilaus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(977, 456);
+            this.ClientSize = new System.Drawing.Size(977, 552);
             this.Controls.Add(this.tilausDataGridView);
             this.Controls.Add(tilausIDLabel);
             this.Controls.Add(this.tilausIDTextBox);
@@ -393,8 +393,8 @@
             this.Controls.Add(this.henkilokunta_idTextBox);
             this.Controls.Add(this.tilausBindingNavigator);
             this.Controls.Add(this.paluuTarjoilijaNayttoon);
-            this.Name = "lasku";
-            this.Text = "lasku";
+            this.Name = "tilaus";
+            this.Text = "Tilaus";
             this.Load += new System.EventHandler(this.lasku_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ravintolaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tilausBindingSource)).EndInit();
