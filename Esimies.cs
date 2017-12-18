@@ -33,7 +33,9 @@ namespace Ravintolatilaus
         // Hae tilaukset
         private void Tilaukset_Click(object sender, EventArgs e)
         {
-          
+            TilausLista tilaukset = new TilausLista();
+            this.Close();
+            tilaukset.Show();
         }
 
         // Tarkastele pöytävaraustilannetta

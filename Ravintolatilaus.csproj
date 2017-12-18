@@ -70,6 +70,12 @@
     <Compile Include="Esimies.Designer.cs">
       <DependentUpon>Esimies.cs</DependentUpon>
     </Compile>
+    <Compile Include="TilausLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TilausLista.Designer.cs">
+      <DependentUpon>TilausLista.cs</DependentUpon>
+    </Compile>
     <Compile Include="tilaus.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Esimies.resx">
       <DependentUpon>Esimies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TilausLista.resx">
+      <DependentUpon>TilausLista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="tilaus.resx">
       <DependentUpon>tilaus.cs</DependentUpon>
