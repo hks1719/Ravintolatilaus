@@ -40,13 +40,5 @@ namespace Ravintolatilaus
             this.Close();
             esimies.Show();
         }
-
-        private void tarjoilija_Click_1(object sender, EventArgs e)
-        {
-            //Jos nämä koodit ovat aktiiviset, tulee tarjoilijanäyttö kahteen kertaan esille, kokonaan tätä ei voi poistaa kun tulee error ilmoitusta.
-            //Tarjoilija tarjoilija = new Tarjoilija();
-            //this.Close();
-            //tarjoilija.Show();
-        }
     }
 }

@@ -57,7 +57,7 @@
             this.tarjoilija.TabIndex = 1;
             this.tarjoilija.Text = "Tarjoilija";
             this.tarjoilija.UseVisualStyleBackColor = true;
-            this.tarjoilija.Click += new System.EventHandler(this.tarjoilija_Click_1);
+            this.tarjoilija.Click += new System.EventHandler(this.Tarjoilija_Click);
             // 
             // pomo
             // 
