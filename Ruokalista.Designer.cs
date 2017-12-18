@@ -66,9 +66,9 @@
             // 
             this.paluuTarjoilijaNayttoon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.paluuTarjoilijaNayttoon.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.paluuTarjoilijaNayttoon.Location = new System.Drawing.Point(29, 424);
+            this.paluuTarjoilijaNayttoon.Location = new System.Drawing.Point(29, 414);
             this.paluuTarjoilijaNayttoon.Name = "paluuTarjoilijaNayttoon";
-            this.paluuTarjoilijaNayttoon.Size = new System.Drawing.Size(128, 65);
+            this.paluuTarjoilijaNayttoon.Size = new System.Drawing.Size(125, 85);
             this.paluuTarjoilijaNayttoon.TabIndex = 0;
             this.paluuTarjoilijaNayttoon.Text = "Paluu tarjoilija näyttöön";
             this.paluuTarjoilijaNayttoon.UseVisualStyleBackColor = true;
@@ -274,9 +274,9 @@
             // 
             this.ruokalistanMuokkaus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ruokalistanMuokkaus.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.ruokalistanMuokkaus.Location = new System.Drawing.Point(452, 424);
+            this.ruokalistanMuokkaus.Location = new System.Drawing.Point(448, 414);
             this.ruokalistanMuokkaus.Name = "ruokalistanMuokkaus";
-            this.ruokalistanMuokkaus.Size = new System.Drawing.Size(121, 65);
+            this.ruokalistanMuokkaus.Size = new System.Drawing.Size(125, 85);
             this.ruokalistanMuokkaus.TabIndex = 3;
             this.ruokalistanMuokkaus.Text = "Ruokalistan muokkaus";
             this.ruokalistanMuokkaus.UseVisualStyleBackColor = true;

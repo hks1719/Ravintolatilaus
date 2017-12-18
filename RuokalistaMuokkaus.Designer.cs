@@ -362,9 +362,9 @@
             // 
             this.paluuRuokalistaNaytolle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.paluuRuokalistaNaytolle.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.paluuRuokalistaNaytolle.Location = new System.Drawing.Point(670, 501);
+            this.paluuRuokalistaNaytolle.Location = new System.Drawing.Point(667, 487);
             this.paluuRuokalistaNaytolle.Name = "paluuRuokalistaNaytolle";
-            this.paluuRuokalistaNaytolle.Size = new System.Drawing.Size(152, 71);
+            this.paluuRuokalistaNaytolle.Size = new System.Drawing.Size(155, 85);
             this.paluuRuokalistaNaytolle.TabIndex = 13;
             this.paluuRuokalistaNaytolle.Text = "Paluu Ruokalista näyttöön";
             this.paluuRuokalistaNaytolle.UseVisualStyleBackColor = true;

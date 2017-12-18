@@ -38,7 +38,7 @@
             // uusiTilaus
             // 
             this.uusiTilaus.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.uusiTilaus.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uusiTilaus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uusiTilaus.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.uusiTilaus.Location = new System.Drawing.Point(70, 45);
             this.uusiTilaus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -51,7 +51,7 @@
             // 
             // ruokalista
             // 
-            this.ruokalista.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ruokalista.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ruokalista.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.ruokalista.Location = new System.Drawing.Point(348, 45);
             this.ruokalista.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -63,7 +63,7 @@
             // 
             // lasku
             // 
-            this.lasku.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lasku.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lasku.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.lasku.Location = new System.Drawing.Point(70, 191);
             this.lasku.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -75,7 +75,7 @@
             // 
             // poytavaraukset
             // 
-            this.poytavaraukset.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.poytavaraukset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.poytavaraukset.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.poytavaraukset.Location = new System.Drawing.Point(348, 191);
             this.poytavaraukset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

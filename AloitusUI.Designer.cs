@@ -36,7 +36,7 @@
             // 
             // kokki
             // 
-            this.kokki.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kokki.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kokki.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.kokki.Location = new System.Drawing.Point(65, 71);
             this.kokki.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -48,7 +48,7 @@
             // 
             // tarjoilija
             // 
-            this.tarjoilija.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tarjoilija.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tarjoilija.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.tarjoilija.Location = new System.Drawing.Point(249, 71);
             this.tarjoilija.Margin = new System.Windows.Forms.Padding(4);
@@ -61,7 +61,7 @@
             // 
             // pomo
             // 
-            this.pomo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pomo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pomo.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.pomo.Location = new System.Drawing.Point(435, 71);
             this.pomo.Margin = new System.Windows.Forms.Padding(4);
