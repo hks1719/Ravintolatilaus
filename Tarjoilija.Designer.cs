@@ -41,7 +41,7 @@
             this.uusiTilaus.Location = new System.Drawing.Point(70, 45);
             this.uusiTilaus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.uusiTilaus.Name = "uusiTilaus";
-            this.uusiTilaus.Size = new System.Drawing.Size(153, 94);
+            this.uusiTilaus.Size = new System.Drawing.Size(200, 100);
             this.uusiTilaus.TabIndex = 0;
             this.uusiTilaus.Text = "Uusi tilaus";
             this.uusiTilaus.UseVisualStyleBackColor = false;
@@ -49,10 +49,10 @@
             // 
             // ruokalista
             // 
-            this.ruokalista.Location = new System.Drawing.Point(289, 45);
+            this.ruokalista.Location = new System.Drawing.Point(348, 45);
             this.ruokalista.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ruokalista.Name = "ruokalista";
-            this.ruokalista.Size = new System.Drawing.Size(153, 94);
+            this.ruokalista.Size = new System.Drawing.Size(200, 100);
             this.ruokalista.TabIndex = 2;
             this.ruokalista.Text = "Ruokalista";
             this.ruokalista.UseVisualStyleBackColor = true;
@@ -62,27 +62,27 @@
             this.lasku.Location = new System.Drawing.Point(70, 191);
             this.lasku.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lasku.Name = "lasku";
-            this.lasku.Size = new System.Drawing.Size(153, 94);
+            this.lasku.Size = new System.Drawing.Size(200, 100);
             this.lasku.TabIndex = 3;
             this.lasku.Text = "Lasku";
             this.lasku.UseVisualStyleBackColor = true;
             // 
             // poytavaraukset
             // 
-            this.poytavaraukset.Location = new System.Drawing.Point(289, 191);
+            this.poytavaraukset.Location = new System.Drawing.Point(348, 191);
             this.poytavaraukset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.poytavaraukset.Name = "poytavaraukset";
-            this.poytavaraukset.Size = new System.Drawing.Size(153, 94);
+            this.poytavaraukset.Size = new System.Drawing.Size(200, 100);
             this.poytavaraukset.TabIndex = 4;
             this.poytavaraukset.Text = "Pöytävaraukset";
             this.poytavaraukset.UseVisualStyleBackColor = true;
             // 
             // paluuAloitusnayttoon
             // 
-            this.paluuAloitusnayttoon.Location = new System.Drawing.Point(467, 313);
+            this.paluuAloitusnayttoon.Location = new System.Drawing.Point(395, 344);
             this.paluuAloitusnayttoon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.paluuAloitusnayttoon.Name = "paluuAloitusnayttoon";
-            this.paluuAloitusnayttoon.Size = new System.Drawing.Size(153, 94);
+            this.paluuAloitusnayttoon.Size = new System.Drawing.Size(153, 63);
             this.paluuAloitusnayttoon.TabIndex = 5;
             this.paluuAloitusnayttoon.Text = "Paluu aloitusnäyttöön";
             this.paluuAloitusnayttoon.UseVisualStyleBackColor = true;
