@@ -15,10 +15,6 @@ namespace Ravintolatilaus
         public AloitusUI()
         {
             InitializeComponent();
-
-            //tarjoilijapainike
-            tarjoilija.Click += Tarjoilija_Click;
-
         }
 
         //tarjoilijapainike
