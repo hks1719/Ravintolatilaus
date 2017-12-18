@@ -15,17 +15,11 @@ namespace Ravintolatilaus
         public Esimies()
         {
             InitializeComponent();
+            Takaisin.Click += Takaisin_Click;
+            Tilaukset.Click += Tilaukset_Click;
+            Poydat.Click += Poydat_Click;
+            Ruokalista.Click += Ruokalista_Click;
         }
-
-        lluku lluku = new lluku();
-
-        // SQL - yhteyden avaus funktio - ei toiminut tällä??
-        //public void Avaayhteys()
-        //{
-        //    SqlConnection con = new SqlConnection();
-        //    con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Ravintola.mdf;Integrated Security=True;Connect Timeout=30";
-        //    con.Open();
-        //}    
 
         // Takaisin päävalikkoon 
         private void Takaisin_Click(object sender, EventArgs e)
@@ -42,7 +36,17 @@ namespace Ravintolatilaus
         // Tarkastele pöytävaraustilannetta
         public void Poydat_Click(object sender, EventArgs e)
         {
-            lluku.Show();   
+            ListanLuku listanLuku = new ListanLuku();
+            this.Close();
+            listanLuku.Show();
+        }
+
+        // Näytä ruokalista
+        private void Ruokalista_Click(object sender, EventArgs e)
+        {
+            Ruokalista ruokalista = new Ruokalista();
+            this.Close();
+            ruokalista.Show();
         }
     }
     }

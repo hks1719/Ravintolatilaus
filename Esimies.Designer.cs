@@ -64,6 +64,7 @@ namespace Ravintolatilaus
             this.Ruokalista.TabIndex = 3;
             this.Ruokalista.Text = "Ruokalista";
             this.Ruokalista.UseVisualStyleBackColor = true;
+            this.Ruokalista.Click += new System.EventHandler(this.Ruokalista_Click);
             // 
             // Takaisin
             // 
