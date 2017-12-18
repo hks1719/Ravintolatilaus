@@ -36,19 +36,20 @@
             // 
             // kokki
             // 
-            this.kokki.Location = new System.Drawing.Point(22, 35);
-            this.kokki.Margin = new System.Windows.Forms.Padding(2);
+            this.kokki.Location = new System.Drawing.Point(65, 71);
+            this.kokki.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kokki.Name = "kokki";
-            this.kokki.Size = new System.Drawing.Size(64, 58);
+            this.kokki.Size = new System.Drawing.Size(85, 85);
             this.kokki.TabIndex = 0;
             this.kokki.Text = "Kokki";
             this.kokki.UseVisualStyleBackColor = true;
             // 
             // tarjoilija
             // 
-            this.tarjoilija.Location = new System.Drawing.Point(125, 35);
+            this.tarjoilija.Location = new System.Drawing.Point(249, 71);
+            this.tarjoilija.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tarjoilija.Name = "tarjoilija";
-            this.tarjoilija.Size = new System.Drawing.Size(75, 58);
+            this.tarjoilija.Size = new System.Drawing.Size(85, 85);
             this.tarjoilija.TabIndex = 1;
             this.tarjoilija.Text = "Tarjoilija";
             this.tarjoilija.UseVisualStyleBackColor = true;
@@ -56,9 +57,10 @@
             // 
             // pomo
             // 
-            this.pomo.Location = new System.Drawing.Point(249, 35);
+            this.pomo.Location = new System.Drawing.Point(435, 71);
+            this.pomo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pomo.Name = "pomo";
-            this.pomo.Size = new System.Drawing.Size(75, 58);
+            this.pomo.Size = new System.Drawing.Size(85, 85);
             this.pomo.TabIndex = 2;
             this.pomo.Text = "Esimies";
             this.pomo.UseVisualStyleBackColor = true;
@@ -66,9 +68,10 @@
             // 
             // Sulje
             // 
-            this.Sulje.Location = new System.Drawing.Point(12, 242);
+            this.Sulje.Location = new System.Drawing.Point(65, 268);
+            this.Sulje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Sulje.Name = "Sulje";
-            this.Sulje.Size = new System.Drawing.Size(87, 33);
+            this.Sulje.Size = new System.Drawing.Size(116, 41);
             this.Sulje.TabIndex = 3;
             this.Sulje.Text = "Sulje";
             this.Sulje.UseVisualStyleBackColor = true;
@@ -76,16 +79,16 @@
             // 
             // AloitusUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(517, 287);
+            this.ClientSize = new System.Drawing.Size(613, 353);
             this.Controls.Add(this.Sulje);
             this.Controls.Add(this.pomo);
             this.Controls.Add(this.tarjoilija);
             this.Controls.Add(this.kokki);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AloitusUI";
-            this.Text = "Form1";
+            this.Text = "Aloitusnäyttö";
             this.ResumeLayout(false);
 
         }
