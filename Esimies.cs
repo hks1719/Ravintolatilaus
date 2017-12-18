@@ -15,10 +15,6 @@ namespace Ravintolatilaus
         public Esimies()
         {
             InitializeComponent();
-            Takaisin.Click += Takaisin_Click;
-            Tilaukset.Click += Tilaukset_Click;
-            Poydat.Click += Poydat_Click;
-            Ruokalista.Click += Ruokalista_Click;
         }
 
         // Takaisin päävalikkoon 

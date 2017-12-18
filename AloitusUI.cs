@@ -19,9 +19,6 @@ namespace Ravintolatilaus
             //tarjoilijapainike
             tarjoilija.Click += Tarjoilija_Click;
 
-            //esimiespainike
-            pomo.Click += pomo_Click;
-   
         }
 
         //tarjoilijapainike
