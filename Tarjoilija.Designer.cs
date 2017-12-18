@@ -38,6 +38,8 @@
             // uusiTilaus
             // 
             this.uusiTilaus.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.uusiTilaus.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uusiTilaus.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.uusiTilaus.Location = new System.Drawing.Point(70, 45);
             this.uusiTilaus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.uusiTilaus.Name = "uusiTilaus";
@@ -49,6 +51,8 @@
             // 
             // ruokalista
             // 
+            this.ruokalista.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ruokalista.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.ruokalista.Location = new System.Drawing.Point(348, 45);
             this.ruokalista.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ruokalista.Name = "ruokalista";
@@ -59,6 +63,8 @@
             // 
             // lasku
             // 
+            this.lasku.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lasku.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.lasku.Location = new System.Drawing.Point(70, 191);
             this.lasku.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lasku.Name = "lasku";
@@ -69,6 +75,8 @@
             // 
             // poytavaraukset
             // 
+            this.poytavaraukset.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.poytavaraukset.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.poytavaraukset.Location = new System.Drawing.Point(348, 191);
             this.poytavaraukset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.poytavaraukset.Name = "poytavaraukset";
@@ -79,10 +87,12 @@
             // 
             // paluuAloitusnayttoon
             // 
-            this.paluuAloitusnayttoon.Location = new System.Drawing.Point(395, 344);
+            this.paluuAloitusnayttoon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paluuAloitusnayttoon.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.paluuAloitusnayttoon.Location = new System.Drawing.Point(348, 344);
             this.paluuAloitusnayttoon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.paluuAloitusnayttoon.Name = "paluuAloitusnayttoon";
-            this.paluuAloitusnayttoon.Size = new System.Drawing.Size(153, 63);
+            this.paluuAloitusnayttoon.Size = new System.Drawing.Size(200, 63);
             this.paluuAloitusnayttoon.TabIndex = 5;
             this.paluuAloitusnayttoon.Text = "Paluu aloitusnäyttöön";
             this.paluuAloitusnayttoon.UseVisualStyleBackColor = true;
