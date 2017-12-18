@@ -42,18 +42,11 @@ namespace Ravintolatilaus
             esimies.Show();
         }
 
-        //Ohjelman sulkemisen varmistus
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        private void tarjoilija_Click_1(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Oletko varma että haluat sulkea ohjelman?", "Varmistus", MessageBoxButtons.YesNo) == DialogResult.No)
-            {
-                e.Cancel = true;
-            }
-            else
-            {
-
-            }
-
+                        Tarjoilija tarjoilija = new Tarjoilija();
+            this.Close();
+            tarjoilija.Show();
         }
     }
 }

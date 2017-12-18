@@ -37,7 +37,7 @@
             // kokki
             // 
             this.kokki.Location = new System.Drawing.Point(22, 35);
-            this.kokki.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kokki.Margin = new System.Windows.Forms.Padding(2);
             this.kokki.Name = "kokki";
             this.kokki.Size = new System.Drawing.Size(64, 58);
             this.kokki.TabIndex = 0;
@@ -52,11 +52,12 @@
             this.tarjoilija.TabIndex = 1;
             this.tarjoilija.Text = "Tarjoilija";
             this.tarjoilija.UseVisualStyleBackColor = true;
+            this.tarjoilija.Click += new System.EventHandler(this.tarjoilija_Click_1);
             // 
-            // esimies = pomo 
+            // pomo
             // 
             this.pomo.Location = new System.Drawing.Point(249, 35);
-            this.pomo.Name = "esimies";
+            this.pomo.Name = "pomo";
             this.pomo.Size = new System.Drawing.Size(75, 58);
             this.pomo.TabIndex = 2;
             this.pomo.Text = "Esimies";
@@ -73,7 +74,7 @@
             this.Sulje.UseVisualStyleBackColor = true;
             this.Sulje.Click += new System.EventHandler(this.Sulje_Click);
             // 
-            // Form1
+            // AloitusUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -82,11 +83,10 @@
             this.Controls.Add(this.pomo);
             this.Controls.Add(this.tarjoilija);
             this.Controls.Add(this.kokki);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "AloitusUI";
             this.Text = "Form1";
             this.ResumeLayout(false);
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
 
         }
 
