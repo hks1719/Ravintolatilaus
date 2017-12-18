@@ -41,5 +41,19 @@ namespace Ravintolatilaus
         {
             esimies.Show();
         }
+
+        //Ohjelman sulkemisen varmistus
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Oletko varma että haluat sulkea ohjelman?", "Varmistus", MessageBoxButtons.YesNo) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+            else
+            {
+
+            }
+
+        }
     }
 }
