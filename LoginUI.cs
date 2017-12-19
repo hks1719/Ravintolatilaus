@@ -9,6 +9,8 @@ using System.Windows.Forms;
 using System.Data.Sql;
 using System.Data.OleDb;
 using System.Data.SqlClient;
+//Lisätty "referenssi"
+using System.Configuration;
 
 namespace Ravintolatilaus
 {
@@ -16,20 +18,27 @@ namespace Ravintolatilaus
     {
         //MSSQL Tietokanta koodi
         SqlConnection con = new SqlConnection();
+
+        ////Käyttäen DByhteys stringä
+        //string connstr = Ravintolatilaus.DByhteys.GetConnectionString();
+
         public LoginUI()
         {
             //MSSQL Tietokanta koodi
             SqlConnection con = new SqlConnection();
             con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Ravintola.mdf;Integrated Security=True;Connect Timeout=30";
+
             InitializeComponent();
             PassText1.PasswordChar = '•';
+
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            //MSSQL Tietokanta koodi
-            // TODO: This line of code loads data into the 'sTUDENTDataSet.login' table. You can move, or remove it, as needed.  
-            //this.loginTableAdapter.Fill(this.sTUDENTDataSet.login);  
+            //MSSQL Tietokanta koodi 
             SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Ravintola.mdf;Integrated Security=True;Connect Timeout=30");
+
+            ////Käyttäen DByhteys stringä
+            //SqlConnection con = new SqlConnection(connstr);
             con.Open();
 
             {
@@ -64,6 +73,10 @@ namespace Ravintolatilaus
             //
             SqlConnection con = new SqlConnection();
             con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Ravintola.mdf;Integrated Security=True;Connect Timeout=30";
+
+            ////Käyttäen DByhteys stringä
+            //SqlConnection con = new SqlConnection(connstr);
+
             con.Open();
             string userid = UserText1.Text;
             string password = PassText1.Text;
