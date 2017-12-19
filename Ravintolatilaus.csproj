@@ -236,10 +236,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Ravintola.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Ravintola_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>Ravintola.mdf</DependentUpon>
     </Content>
   </ItemGroup>
