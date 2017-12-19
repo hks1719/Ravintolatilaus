@@ -38,7 +38,7 @@
             // 
             // ruokalista
             // 
-            this.ruokalista.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ruokalista.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ruokalista.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.ruokalista.Location = new System.Drawing.Point(348, 46);
             this.ruokalista.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -50,7 +50,7 @@
             // 
             // tilaus
             // 
-            this.tilaus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tilaus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tilaus.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.tilaus.Location = new System.Drawing.Point(89, 46);
             this.tilaus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -62,7 +62,7 @@
             // 
             // poytavaraukset
             // 
-            this.poytavaraukset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.poytavaraukset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.poytavaraukset.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.poytavaraukset.Location = new System.Drawing.Point(348, 182);
             this.poytavaraukset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -97,7 +97,7 @@
             // 
             // lasku
             // 
-            this.lasku.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lasku.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lasku.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.lasku.Location = new System.Drawing.Point(89, 182);
             this.lasku.Name = "lasku";

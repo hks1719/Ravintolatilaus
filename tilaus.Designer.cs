@@ -80,7 +80,7 @@
             // tilausIDLabel
             // 
             tilausIDLabel.AutoSize = true;
-            tilausIDLabel.Location = new System.Drawing.Point(39, 44);
+            tilausIDLabel.Location = new System.Drawing.Point(34, 106);
             tilausIDLabel.Name = "tilausIDLabel";
             tilausIDLabel.Size = new System.Drawing.Size(62, 17);
             tilausIDLabel.TabIndex = 2;
@@ -89,7 +89,7 @@
             // kommenttiLabel
             // 
             kommenttiLabel.AutoSize = true;
-            kommenttiLabel.Location = new System.Drawing.Point(39, 72);
+            kommenttiLabel.Location = new System.Drawing.Point(34, 134);
             kommenttiLabel.Name = "kommenttiLabel";
             kommenttiLabel.Size = new System.Drawing.Size(76, 17);
             kommenttiLabel.TabIndex = 4;
@@ -98,7 +98,7 @@
             // poyta_poytaIDLabel
             // 
             poyta_poytaIDLabel.AutoSize = true;
-            poyta_poytaIDLabel.Location = new System.Drawing.Point(39, 100);
+            poyta_poytaIDLabel.Location = new System.Drawing.Point(34, 162);
             poyta_poytaIDLabel.Name = "poyta_poytaIDLabel";
             poyta_poytaIDLabel.Size = new System.Drawing.Size(103, 17);
             poyta_poytaIDLabel.TabIndex = 6;
@@ -107,7 +107,7 @@
             // ruokalista_annosLabel
             // 
             ruokalista_annosLabel.AutoSize = true;
-            ruokalista_annosLabel.Location = new System.Drawing.Point(39, 128);
+            ruokalista_annosLabel.Location = new System.Drawing.Point(34, 190);
             ruokalista_annosLabel.Name = "ruokalista_annosLabel";
             ruokalista_annosLabel.Size = new System.Drawing.Size(116, 17);
             ruokalista_annosLabel.TabIndex = 8;
@@ -116,7 +116,7 @@
             // henkilokunta_idLabel
             // 
             henkilokunta_idLabel.AutoSize = true;
-            henkilokunta_idLabel.Location = new System.Drawing.Point(39, 156);
+            henkilokunta_idLabel.Location = new System.Drawing.Point(34, 218);
             henkilokunta_idLabel.Name = "henkilokunta_idLabel";
             henkilokunta_idLabel.Size = new System.Drawing.Size(107, 17);
             henkilokunta_idLabel.TabIndex = 10;
@@ -124,9 +124,11 @@
             // 
             // paluuTarjoilijaNayttoon
             // 
-            this.paluuTarjoilijaNayttoon.Location = new System.Drawing.Point(58, 377);
+            this.paluuTarjoilijaNayttoon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paluuTarjoilijaNayttoon.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.paluuTarjoilijaNayttoon.Location = new System.Drawing.Point(774, 438);
             this.paluuTarjoilijaNayttoon.Name = "paluuTarjoilijaNayttoon";
-            this.paluuTarjoilijaNayttoon.Size = new System.Drawing.Size(122, 54);
+            this.paluuTarjoilijaNayttoon.Size = new System.Drawing.Size(154, 85);
             this.paluuTarjoilijaNayttoon.TabIndex = 1;
             this.paluuTarjoilijaNayttoon.Text = "Paluu Tarjoilija näyttöön";
             this.paluuTarjoilijaNayttoon.UseVisualStyleBackColor = true;
@@ -284,7 +286,7 @@
             // tilausIDTextBox
             // 
             this.tilausIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tilausBindingSource, "tilausID", true));
-            this.tilausIDTextBox.Location = new System.Drawing.Point(161, 41);
+            this.tilausIDTextBox.Location = new System.Drawing.Point(156, 103);
             this.tilausIDTextBox.Name = "tilausIDTextBox";
             this.tilausIDTextBox.Size = new System.Drawing.Size(100, 22);
             this.tilausIDTextBox.TabIndex = 3;
@@ -292,7 +294,7 @@
             // kommenttiTextBox
             // 
             this.kommenttiTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tilausBindingSource, "kommentti", true));
-            this.kommenttiTextBox.Location = new System.Drawing.Point(161, 69);
+            this.kommenttiTextBox.Location = new System.Drawing.Point(156, 131);
             this.kommenttiTextBox.Name = "kommenttiTextBox";
             this.kommenttiTextBox.Size = new System.Drawing.Size(100, 22);
             this.kommenttiTextBox.TabIndex = 5;
@@ -300,7 +302,7 @@
             // poyta_poytaIDTextBox
             // 
             this.poyta_poytaIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tilausBindingSource, "poyta_poytaID", true));
-            this.poyta_poytaIDTextBox.Location = new System.Drawing.Point(161, 97);
+            this.poyta_poytaIDTextBox.Location = new System.Drawing.Point(156, 159);
             this.poyta_poytaIDTextBox.Name = "poyta_poytaIDTextBox";
             this.poyta_poytaIDTextBox.Size = new System.Drawing.Size(100, 22);
             this.poyta_poytaIDTextBox.TabIndex = 7;
@@ -308,7 +310,7 @@
             // ruokalista_annosTextBox
             // 
             this.ruokalista_annosTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tilausBindingSource, "ruokalista_annos", true));
-            this.ruokalista_annosTextBox.Location = new System.Drawing.Point(161, 125);
+            this.ruokalista_annosTextBox.Location = new System.Drawing.Point(156, 187);
             this.ruokalista_annosTextBox.Name = "ruokalista_annosTextBox";
             this.ruokalista_annosTextBox.Size = new System.Drawing.Size(100, 22);
             this.ruokalista_annosTextBox.TabIndex = 9;
@@ -316,7 +318,7 @@
             // henkilokunta_idTextBox
             // 
             this.henkilokunta_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tilausBindingSource, "henkilokunta_id", true));
-            this.henkilokunta_idTextBox.Location = new System.Drawing.Point(161, 153);
+            this.henkilokunta_idTextBox.Location = new System.Drawing.Point(156, 215);
             this.henkilokunta_idTextBox.Name = "henkilokunta_idTextBox";
             this.henkilokunta_idTextBox.Size = new System.Drawing.Size(100, 22);
             this.henkilokunta_idTextBox.TabIndex = 11;
@@ -333,7 +335,7 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewImageColumn1});
             this.tilausDataGridView.DataSource = this.tilausBindingSource;
-            this.tilausDataGridView.Location = new System.Drawing.Point(294, 46);
+            this.tilausDataGridView.Location = new System.Drawing.Point(289, 108);
             this.tilausDataGridView.Name = "tilausDataGridView";
             this.tilausDataGridView.RowTemplate.Height = 24;
             this.tilausDataGridView.Size = new System.Drawing.Size(653, 220);

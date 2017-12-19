@@ -286,7 +286,7 @@
             // 
             this.paluuEsimiehenNayttoon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.paluuEsimiehenNayttoon.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.paluuEsimiehenNayttoon.Location = new System.Drawing.Point(160, 414);
+            this.paluuEsimiehenNayttoon.Location = new System.Drawing.Point(176, 414);
             this.paluuEsimiehenNayttoon.Name = "paluuEsimiehenNayttoon";
             this.paluuEsimiehenNayttoon.Size = new System.Drawing.Size(125, 85);
             this.paluuEsimiehenNayttoon.TabIndex = 4;
