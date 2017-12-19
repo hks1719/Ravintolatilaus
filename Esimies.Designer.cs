@@ -38,9 +38,12 @@ namespace Ravintolatilaus
             // 
             // Tilaukset
             // 
-            this.Tilaukset.Location = new System.Drawing.Point(29, 85);
+            this.Tilaukset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tilaukset.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.Tilaukset.Location = new System.Drawing.Point(39, 105);
+            this.Tilaukset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Tilaukset.Name = "Tilaukset";
-            this.Tilaukset.Size = new System.Drawing.Size(156, 58);
+            this.Tilaukset.Size = new System.Drawing.Size(208, 71);
             this.Tilaukset.TabIndex = 0;
             this.Tilaukset.Text = "Tilaukset";
             this.Tilaukset.UseVisualStyleBackColor = true;
@@ -48,9 +51,12 @@ namespace Ravintolatilaus
             // 
             // Poydat
             // 
-            this.Poydat.Location = new System.Drawing.Point(216, 85);
+            this.Poydat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Poydat.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.Poydat.Location = new System.Drawing.Point(288, 105);
+            this.Poydat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Poydat.Name = "Poydat";
-            this.Poydat.Size = new System.Drawing.Size(156, 58);
+            this.Poydat.Size = new System.Drawing.Size(208, 71);
             this.Poydat.TabIndex = 2;
             this.Poydat.Text = "Pöytävaraukset";
             this.Poydat.UseVisualStyleBackColor = true;
@@ -58,9 +64,12 @@ namespace Ravintolatilaus
             // 
             // Ruokalista
             // 
-            this.Ruokalista.Location = new System.Drawing.Point(216, 169);
+            this.Ruokalista.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ruokalista.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.Ruokalista.Location = new System.Drawing.Point(288, 208);
+            this.Ruokalista.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Ruokalista.Name = "Ruokalista";
-            this.Ruokalista.Size = new System.Drawing.Size(156, 58);
+            this.Ruokalista.Size = new System.Drawing.Size(208, 71);
             this.Ruokalista.TabIndex = 3;
             this.Ruokalista.Text = "Ruokalista";
             this.Ruokalista.UseVisualStyleBackColor = true;
@@ -68,9 +77,12 @@ namespace Ravintolatilaus
             // 
             // Takaisin
             // 
-            this.Takaisin.Location = new System.Drawing.Point(29, 169);
+            this.Takaisin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Takaisin.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.Takaisin.Location = new System.Drawing.Point(39, 208);
+            this.Takaisin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Takaisin.Name = "Takaisin";
-            this.Takaisin.Size = new System.Drawing.Size(156, 58);
+            this.Takaisin.Size = new System.Drawing.Size(208, 71);
             this.Takaisin.TabIndex = 4;
             this.Takaisin.Text = "Päävalikkoon";
             this.Takaisin.UseVisualStyleBackColor = true;
@@ -78,13 +90,14 @@ namespace Ravintolatilaus
             // 
             // Esimies
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(403, 403);
+            this.ClientSize = new System.Drawing.Size(537, 496);
             this.Controls.Add(this.Takaisin);
             this.Controls.Add(this.Ruokalista);
             this.Controls.Add(this.Poydat);
             this.Controls.Add(this.Tilaukset);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Esimies";
             this.Text = "Esimies";
             this.ResumeLayout(false);

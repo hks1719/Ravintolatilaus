@@ -49,9 +49,12 @@
             // 
             // PaluuAlkuun
             // 
-            this.PaluuAlkuun.Location = new System.Drawing.Point(244, 336);
+            this.PaluuAlkuun.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PaluuAlkuun.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.PaluuAlkuun.Location = new System.Drawing.Point(332, 414);
+            this.PaluuAlkuun.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PaluuAlkuun.Name = "PaluuAlkuun";
-            this.PaluuAlkuun.Size = new System.Drawing.Size(156, 58);
+            this.PaluuAlkuun.Size = new System.Drawing.Size(200, 70);
             this.PaluuAlkuun.TabIndex = 0;
             this.PaluuAlkuun.Text = "Paluu päävalikkoon";
             this.PaluuAlkuun.UseVisualStyleBackColor = true;
@@ -91,9 +94,10 @@
             this.ruokalista_annos,
             this.henkilokunta_id,
             this.auki});
-            this.listView1.Location = new System.Drawing.Point(12, 50);
+            this.listView1.Location = new System.Drawing.Point(16, 62);
+            this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(388, 280);
+            this.listView1.Size = new System.Drawing.Size(516, 344);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -128,9 +132,12 @@
             // 
             // update
             // 
-            this.update.Location = new System.Drawing.Point(26, 336);
+            this.update.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.update.Location = new System.Drawing.Point(16, 414);
+            this.update.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.update.Name = "update";
-            this.update.Size = new System.Drawing.Size(156, 58);
+            this.update.Size = new System.Drawing.Size(200, 70);
             this.update.TabIndex = 2;
             this.update.Text = "Päivitä tilaukset";
             this.update.UseVisualStyleBackColor = true;
@@ -141,21 +148,23 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(132, 9);
+            this.label1.Location = new System.Drawing.Point(176, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 20);
+            this.label1.Size = new System.Drawing.Size(150, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "Tilatut annokset";
             // 
             // Kokki
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(420, 422);
+            this.ClientSize = new System.Drawing.Size(560, 506);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.update);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.PaluuAlkuun);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Kokki";
             this.Text = "Kokki";
             this.Load += new System.EventHandler(this.Kokki_Load);

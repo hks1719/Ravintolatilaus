@@ -47,9 +47,12 @@
             // 
             // Sulje
             // 
-            this.Sulje.Location = new System.Drawing.Point(24, 315);
+            this.Sulje.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sulje.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.Sulje.Location = new System.Drawing.Point(52, 388);
+            this.Sulje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Sulje.Name = "Sulje";
-            this.Sulje.Size = new System.Drawing.Size(176, 42);
+            this.Sulje.Size = new System.Drawing.Size(215, 50);
             this.Sulje.TabIndex = 0;
             this.Sulje.Text = "Sulje";
             this.Sulje.UseVisualStyleBackColor = true;
@@ -57,9 +60,12 @@
             // 
             // MuokkaaPoytia
             // 
-            this.MuokkaaPoytia.Location = new System.Drawing.Point(226, 315);
+            this.MuokkaaPoytia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MuokkaaPoytia.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.MuokkaaPoytia.Location = new System.Drawing.Point(320, 388);
+            this.MuokkaaPoytia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MuokkaaPoytia.Name = "MuokkaaPoytia";
-            this.MuokkaaPoytia.Size = new System.Drawing.Size(176, 42);
+            this.MuokkaaPoytia.Size = new System.Drawing.Size(215, 50);
             this.MuokkaaPoytia.TabIndex = 1;
             this.MuokkaaPoytia.Text = "Muokkaa pöytävarauksia";
             this.MuokkaaPoytia.UseVisualStyleBackColor = true;
@@ -74,9 +80,10 @@
             this.asiakaspaikkojaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.poytaBindingSource;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.Location = new System.Drawing.Point(39, 35);
+            this.dataGridView1.Location = new System.Drawing.Point(52, 43);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(362, 163);
+            this.dataGridView1.Size = new System.Drawing.Size(483, 201);
             this.dataGridView1.TabIndex = 2;
             // 
             // poytaIDDataGridViewTextBoxColumn
@@ -88,7 +95,7 @@
             this.poytaIDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
             this.poytaIDDataGridViewTextBoxColumn.HeaderText = "poytaID";
             this.poytaIDDataGridViewTextBoxColumn.Name = "poytaIDDataGridViewTextBoxColumn";
-            this.poytaIDDataGridViewTextBoxColumn.Width = 69;
+            this.poytaIDDataGridViewTextBoxColumn.Width = 85;
             // 
             // asiakaspaikkojaDataGridViewTextBoxColumn
             // 
@@ -117,12 +124,13 @@
             // 
             // ListanLuku
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 411);
+            this.ClientSize = new System.Drawing.Size(609, 506);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.MuokkaaPoytia);
             this.Controls.Add(this.Sulje);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ListanLuku";
             this.Text = "Pöytävaraukset";
             this.Load += new System.EventHandler(this.ListanLuku_load);

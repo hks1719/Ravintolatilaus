@@ -322,7 +322,7 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
             this.ruokalistaDataGridView.DataSource = this.ruokalistaBindingSource;
-            this.ruokalistaDataGridView.Location = new System.Drawing.Point(270, 57);
+            this.ruokalistaDataGridView.Location = new System.Drawing.Point(270, 64);
             this.ruokalistaDataGridView.Name = "ruokalistaDataGridView";
             this.ruokalistaDataGridView.RowTemplate.Height = 24;
             this.ruokalistaDataGridView.Size = new System.Drawing.Size(552, 417);

@@ -21,8 +21,16 @@ namespace Ravintolatilaus
             paluuAloitusnayttoon.Click += PaluuAloitusnayttoon_Click;
             ruokalista.Click += Ruokalista_Click;
             lasku.Click += lasku_Click;
+            poytavaraukset.Click += Poytavaraukset_Click;
 
         
+        }
+
+        private void Poytavaraukset_Click(object sender, EventArgs e)
+        {
+            ListanLuku listanLuku = new ListanLuku();
+            this.Close();
+            listanLuku.Show();
         }
 
         private void Ruokalista_Click(object sender, EventArgs e)
