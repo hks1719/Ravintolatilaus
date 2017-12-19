@@ -37,11 +37,12 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.tilausID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.kommentti = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.update = new System.Windows.Forms.Button();
             this.poyta_poytaID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ruokalista_annos = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.henkilokunta_id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.auki = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.update = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ravintolaDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tilausBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -90,7 +91,7 @@
             this.ruokalista_annos,
             this.henkilokunta_id,
             this.auki});
-            this.listView1.Location = new System.Drawing.Point(12, 12);
+            this.listView1.Location = new System.Drawing.Point(12, 50);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(388, 280);
             this.listView1.TabIndex = 1;
@@ -105,21 +106,12 @@
             // kommentti
             // 
             this.kommentti.Text = "Kommentti";
-            this.kommentti.Width = 82;
-            // 
-            // update
-            // 
-            this.update.Location = new System.Drawing.Point(77, 336);
-            this.update.Name = "update";
-            this.update.Size = new System.Drawing.Size(75, 23);
-            this.update.TabIndex = 2;
-            this.update.Text = "Päivitä";
-            this.update.UseVisualStyleBackColor = true;
-            this.update.Click += new System.EventHandler(this.update_Click);
+            this.kommentti.Width = 81;
             // 
             // poyta_poytaID
             // 
             this.poyta_poytaID.Text = "Pöytä numero";
+            this.poyta_poytaID.Width = 79;
             // 
             // ruokalista_annos
             // 
@@ -132,12 +124,35 @@
             // auki
             // 
             this.auki.Text = "Auki";
+            this.auki.Width = 41;
+            // 
+            // update
+            // 
+            this.update.Location = new System.Drawing.Point(26, 336);
+            this.update.Name = "update";
+            this.update.Size = new System.Drawing.Size(156, 58);
+            this.update.TabIndex = 2;
+            this.update.Text = "Päivitä tilaukset";
+            this.update.UseVisualStyleBackColor = true;
+            this.update.Click += new System.EventHandler(this.update_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Location = new System.Drawing.Point(132, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(122, 20);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Tilatut annokset";
             // 
             // Kokki
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(420, 422);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.update);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.PaluuAlkuun);
@@ -147,6 +162,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ravintolaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tilausBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -165,5 +181,6 @@
         private System.Windows.Forms.ColumnHeader ruokalista_annos;
         private System.Windows.Forms.ColumnHeader henkilokunta_id;
         private System.Windows.Forms.ColumnHeader auki;
+        private System.Windows.Forms.Label label1;
     }
 }
