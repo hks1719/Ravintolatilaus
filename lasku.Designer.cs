@@ -35,6 +35,7 @@
             this.ruokalista_annos = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.hinta = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.haeTilaus = new System.Windows.Forms.Button();
+            this.poyta_poytaID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // comboBox1
@@ -64,9 +65,10 @@
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.tilausID,
+            this.poyta_poytaID,
             this.ruokalista_annos,
             this.hinta});
-            this.listView1.Location = new System.Drawing.Point(81, 121);
+            this.listView1.Location = new System.Drawing.Point(29, 126);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(811, 297);
             this.listView1.TabIndex = 2;
@@ -98,6 +100,10 @@
             this.haeTilaus.UseVisualStyleBackColor = true;
             this.haeTilaus.Click += new System.EventHandler(this.HaeTilaus_Click);
             // 
+            // poyta_poytaID
+            // 
+            this.poyta_poytaID.Text = "PöytäID";
+            // 
             // Lasku
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -123,5 +129,6 @@
         private System.Windows.Forms.ColumnHeader ruokalista_annos;
         private System.Windows.Forms.ColumnHeader hinta;
         private System.Windows.Forms.Button haeTilaus;
+        private System.Windows.Forms.ColumnHeader poyta_poytaID;
     }
 }

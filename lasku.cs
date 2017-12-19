@@ -25,33 +25,35 @@ namespace Ravintolatilaus
             listView1.Items.Clear();
 
                         
-                int.TryParse(comboBox1.SelectedItem.ToString(), out int poyta);
-                SqlCommand cm = new SqlCommand("SELECT tilausID, poyta_poytaID, ruokalista_annos, hinta FROM dbo.tilaus JOIN dbo.ruokalista ON tilaus.ruokalista_annos = ruokalista.annos WHERE poyta_poytaID = " + poyta + " ORDER BY tilausID", cn);
+            int.TryParse(comboBox1.SelectedItem.ToString(), out int poyta);
+            SqlCommand cm = new SqlCommand("SELECT tilausID, poyta_poytaID, ruokalista_annos, hinta FROM dbo.tilaus JOIN dbo.ruokalista ON tilaus.ruokalista_annos = ruokalista.annos WHERE poyta_poytaID = " + poyta + " ORDER BY tilausID", cn);
 
-                try
-                {
-                    cn.Open();
-                    SqlDataReader dr = cm.ExecuteReader();
+            try
+            {
+                cn.Open();
+                SqlDataReader dr = cm.ExecuteReader();
 
-                    while (dr.Read())
-                    {
-                        ListViewItem item = new ListViewItem(dr["TilausID"].ToString());
-                        item.SubItems.Add(dr["ruokalista_annos"].ToString());
+            while (dr.Read())
+            {
+                ListViewItem item = new ListViewItem(dr["tilausID"].ToString());
+                item.SubItems.Add(dr["poyta_poytaID"].ToString());
+                item.SubItems.Add(dr["ruokalista_annos"].ToString());
+                item.SubItems.Add(dr["hinta"].ToString());
 
-                        ListViewItem item2 = new ListViewItem(dr["hinta"].ToString());
-                        //item2.SubItems.Add(dr["hinta"].ToString());
+                
 
-                        listView1.Items.Add(item);
-                    }
+                listView1.Items.Add(item);
+                
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                finally
-                {
-                    cn.Close();
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                cn.Close();
+            }
             
                 
         }
