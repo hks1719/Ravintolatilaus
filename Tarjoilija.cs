@@ -54,7 +54,14 @@ namespace Ravintolatilaus
             this.tarjoilija = tarjoilija;
         }
 
-        private void uusiTilaus_Click(object sender, EventArgs e)
+        //private void uusiTilaus_Click(object sender, EventArgs e)
+        //{
+        //    TilausSyotto f2 = new TilausSyotto();
+        //    this.Close();
+        //    f2.ShowDialog();
+        //}
+
+        private void button1_Click(object sender, EventArgs e)
         {
             TilausSyotto f2 = new TilausSyotto();
             this.Close();

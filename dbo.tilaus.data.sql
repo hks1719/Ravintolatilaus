@@ -1,0 +1,6 @@
+﻿INSERT INTO [dbo].[tilaus] ([tilausID], [kommentti], [poyta_poytaID], [ruokalista_annos], [henkilokunta_id], [auki]) VALUES (1, N'Kaverit', 1, NULL, 1, NULL)
+INSERT INTO [dbo].[tilaus] ([tilausID], [kommentti], [poyta_poytaID], [ruokalista_annos], [henkilokunta_id], [auki]) VALUES (2, N'Kaverit', 1, NULL, 1, NULL)
+INSERT INTO [dbo].[tilaus] ([tilausID], [kommentti], [poyta_poytaID], [ruokalista_annos], [henkilokunta_id], [auki]) VALUES (3, N'Naapurit', 2, NULL, 2, NULL)
+INSERT INTO [dbo].[tilaus] ([tilausID], [kommentti], [poyta_poytaID], [ruokalista_annos], [henkilokunta_id], [auki]) VALUES (4, N'Naapurit', 2, NULL, 2, NULL)
+INSERT INTO [dbo].[tilaus] ([tilausID], [kommentti], [poyta_poytaID], [ruokalista_annos], [henkilokunta_id], [auki]) VALUES (5, N'Sukulaiset', 3, NULL, 1, NULL)
+INSERT INTO [dbo].[tilaus] ([tilausID], [kommentti], [poyta_poytaID], [ruokalista_annos], [henkilokunta_id], [auki]) VALUES (6, N'Sukulaiset', 3, NULL, 1, NULL)

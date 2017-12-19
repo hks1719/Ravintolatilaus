@@ -14,6 +14,7 @@ namespace Ravintolatilaus
 {
     public partial class TilausSyotto : Form
     {
+        public SqlConnection cn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Ravintola.mdf;Integrated Security=True;Connect Timeout=30");
         public TilausSyotto()
         {
             InitializeComponent();
@@ -35,36 +36,57 @@ namespace Ravintolatilaus
 
         private void TilausSyottoTallenna_Click(object sender, EventArgs e)
         {
-            if (poytanrotext.Text == "")
+            if (tilausIDTextBox.Text == "")
             {
-                MessageBox.Show("Ole hyvä ja syötä pöytänumero");
+                MessageBox.Show("Ole hyvä ja syötä Tilaus");
             }
-            else if (poytapaikkaNrotext.Text == "")
+            else if (kommenttiTextBox.Text == "")
             {
-                MessageBox.Show("Ole hyvä ja syötä asiakasnumero");
-            }
-            else if (alkuruokanrotext.Text == "")
-            {
-                MessageBox.Show("Ole hyvä ja syötä alkuruoka");
+                MessageBox.Show("Ole hyvä ja syötä Kommentti");
             }
 
             else
             {
                 //tallentaa syötetyt tiedot
-                string poytaNro = poytanrotext.Text;
-                string asiakasNro = poytapaikkaNrotext.Text;
-                string alkuruokaNro = alkuruokanrotext.Text;
+                string tilausIds = tilausIDTextBox.Text;
+                string kommenntis = kommenttiTextBox.Text;
+                string poyta_Ids = poyta_poytaIDTextBox.Text;
+                string ruokalistas = ruokalista_annosTextBox.Text;
+                string henkilokunta_ids = henkilokunta_idTextBox.Text;
 
-                string query = "INSERT INTO poyta(poytaID) " + "Values('" + poytaNro + "')";
+                string query;
+                SqlCommand cmd;
 
-                using (SqlConnection connection = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Ravintola.mdf;Integrated Security=True;Connect Timeout=30"))
+                //using (SqlConnection connection = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Ravintola.mdf;Integrated Security=True;Connect Timeout=30"))
+                try
                 {
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        connection.Open();
-                        command.ExecuteNonQuery();
-                    }
+                    query = "INSERT INTO[dbo].[tilaus]([tilausID], [kommentti], [poyta_poytaID], [ruokalista_annos], [henkilokunta_id], [auki])";
+                    query += String.Format("VALUES (@tilausIds, @kommenntis, @poyta_Ids, @ruokalistas, @henkilokunta_ids, NULL)");
+
+                    cmd = new SqlCommand(query, cn);
+                    cmd.CommandText = query;
+                    cmd.CommandType = CommandType.Text;
+
+                    cmd.Parameters.AddWithValue("@tilausIds", tilausIDTextBox.Text);
+                    cmd.Parameters.AddWithValue("@kommenntis", kommenttiTextBox.Text);
+                    cmd.Parameters.AddWithValue("@poyta_Ids", poyta_poytaIDTextBox.Text);
+                    cmd.Parameters.AddWithValue("@ruokalistas", ruokalista_annosTextBox.Text);
+                    cmd.Parameters.AddWithValue("@henkilokunta_ids", henkilokunta_idTextBox.Text);
+
+                    cn.Open();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Update Successful!!");
+
                 }
+                catch (SqlException ex)
+                {
+                    throw new Exception("Error Inserting", ex);
+                }
+                finally
+                {
+                    cn.Close();
+                }
+
             }
 
             ////avaa tietokanta yhteyden HUOM! tee tästä funktio!!!!!!! = laskee vee käyrää merkittävästi!

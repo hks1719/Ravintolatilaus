@@ -37,10 +37,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TilausSyotto));
             this.poytaNroLabel = new System.Windows.Forms.Label();
             this.poytanrotext = new System.Windows.Forms.TextBox();
-            this.poytapaikkaNrotext = new System.Windows.Forms.TextBox();
-            this.poytapaikkaNroLabel = new System.Windows.Forms.Label();
-            this.alkuruokaLabel = new System.Windows.Forms.Label();
-            this.alkuruokanrotext = new System.Windows.Forms.TextBox();
             this.TilausSyottoTallenna = new System.Windows.Forms.Button();
             this.palaaTarjoilijaNayttoon = new System.Windows.Forms.Button();
             this.ravintolaDataSet1 = new Ravintolatilaus.RavintolaDataSet1();
@@ -149,38 +145,6 @@
             this.poytanrotext.Name = "poytanrotext";
             this.poytanrotext.Size = new System.Drawing.Size(100, 20);
             this.poytanrotext.TabIndex = 1;
-            // 
-            // poytapaikkaNrotext
-            // 
-            this.poytapaikkaNrotext.Location = new System.Drawing.Point(138, 60);
-            this.poytapaikkaNrotext.Name = "poytapaikkaNrotext";
-            this.poytapaikkaNrotext.Size = new System.Drawing.Size(100, 20);
-            this.poytapaikkaNrotext.TabIndex = 2;
-            // 
-            // poytapaikkaNroLabel
-            // 
-            this.poytapaikkaNroLabel.AutoSize = true;
-            this.poytapaikkaNroLabel.Location = new System.Drawing.Point(39, 64);
-            this.poytapaikkaNroLabel.Name = "poytapaikkaNroLabel";
-            this.poytapaikkaNroLabel.Size = new System.Drawing.Size(67, 13);
-            this.poytapaikkaNroLabel.TabIndex = 3;
-            this.poytapaikkaNroLabel.Text = "PöytäPaikka";
-            // 
-            // alkuruokaLabel
-            // 
-            this.alkuruokaLabel.AutoSize = true;
-            this.alkuruokaLabel.Location = new System.Drawing.Point(48, 93);
-            this.alkuruokaLabel.Name = "alkuruokaLabel";
-            this.alkuruokaLabel.Size = new System.Drawing.Size(55, 13);
-            this.alkuruokaLabel.TabIndex = 4;
-            this.alkuruokaLabel.Text = "Alkuruoka";
-            // 
-            // alkuruokanrotext
-            // 
-            this.alkuruokanrotext.Location = new System.Drawing.Point(138, 86);
-            this.alkuruokanrotext.Name = "alkuruokanrotext";
-            this.alkuruokanrotext.Size = new System.Drawing.Size(100, 20);
-            this.alkuruokanrotext.TabIndex = 5;
             // 
             // TilausSyottoTallenna
             // 
@@ -360,7 +324,7 @@
             // 
             this.tilausIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tilausBindingSource, "tilausID", true));
             this.tilausIDTextBox.Location = new System.Drawing.Point(102, 188);
-            this.tilausIDTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tilausIDTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.tilausIDTextBox.Name = "tilausIDTextBox";
             this.tilausIDTextBox.Size = new System.Drawing.Size(76, 20);
             this.tilausIDTextBox.TabIndex = 10;
@@ -369,7 +333,7 @@
             // 
             this.kommenttiTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tilausBindingSource, "kommentti", true));
             this.kommenttiTextBox.Location = new System.Drawing.Point(102, 210);
-            this.kommenttiTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kommenttiTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.kommenttiTextBox.Name = "kommenttiTextBox";
             this.kommenttiTextBox.Size = new System.Drawing.Size(76, 20);
             this.kommenttiTextBox.TabIndex = 12;
@@ -378,7 +342,7 @@
             // 
             this.poyta_poytaIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tilausBindingSource, "poyta_poytaID", true));
             this.poyta_poytaIDTextBox.Location = new System.Drawing.Point(102, 233);
-            this.poyta_poytaIDTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.poyta_poytaIDTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.poyta_poytaIDTextBox.Name = "poyta_poytaIDTextBox";
             this.poyta_poytaIDTextBox.Size = new System.Drawing.Size(76, 20);
             this.poyta_poytaIDTextBox.TabIndex = 14;
@@ -387,7 +351,7 @@
             // 
             this.ruokalista_annosTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tilausBindingSource, "ruokalista_annos", true));
             this.ruokalista_annosTextBox.Location = new System.Drawing.Point(102, 256);
-            this.ruokalista_annosTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ruokalista_annosTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.ruokalista_annosTextBox.Name = "ruokalista_annosTextBox";
             this.ruokalista_annosTextBox.Size = new System.Drawing.Size(76, 20);
             this.ruokalista_annosTextBox.TabIndex = 16;
@@ -396,7 +360,7 @@
             // 
             this.henkilokunta_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tilausBindingSource, "henkilokunta_id", true));
             this.henkilokunta_idTextBox.Location = new System.Drawing.Point(102, 279);
-            this.henkilokunta_idTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.henkilokunta_idTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.henkilokunta_idTextBox.Name = "henkilokunta_idTextBox";
             this.henkilokunta_idTextBox.Size = new System.Drawing.Size(76, 20);
             this.henkilokunta_idTextBox.TabIndex = 18;
@@ -414,7 +378,7 @@
             this.dataGridViewImageColumn1});
             this.tilausDataGridView.DataSource = this.tilausBindingSource;
             this.tilausDataGridView.Location = new System.Drawing.Point(204, 188);
-            this.tilausDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tilausDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.tilausDataGridView.Name = "tilausDataGridView";
             this.tilausDataGridView.RowTemplate.Height = 24;
             this.tilausDataGridView.Size = new System.Drawing.Size(475, 179);
@@ -475,10 +439,6 @@
             this.Controls.Add(this.tilausBindingNavigator);
             this.Controls.Add(this.palaaTarjoilijaNayttoon);
             this.Controls.Add(this.TilausSyottoTallenna);
-            this.Controls.Add(this.alkuruokanrotext);
-            this.Controls.Add(this.alkuruokaLabel);
-            this.Controls.Add(this.poytapaikkaNroLabel);
-            this.Controls.Add(this.poytapaikkaNrotext);
             this.Controls.Add(this.poytanrotext);
             this.Controls.Add(this.poytaNroLabel);
             this.Name = "TilausSyotto";
@@ -499,10 +459,6 @@
 
         private System.Windows.Forms.Label poytaNroLabel;
         private System.Windows.Forms.TextBox poytanrotext;
-        private System.Windows.Forms.TextBox poytapaikkaNrotext;
-        private System.Windows.Forms.Label poytapaikkaNroLabel;
-        private System.Windows.Forms.Label alkuruokaLabel;
-        private System.Windows.Forms.TextBox alkuruokanrotext;
         private System.Windows.Forms.Button TilausSyottoTallenna;
         private System.Windows.Forms.Button palaaTarjoilijaNayttoon;
         private RavintolaDataSet1 ravintolaDataSet1;
