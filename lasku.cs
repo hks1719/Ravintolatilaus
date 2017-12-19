@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -9,36 +10,50 @@ using System.Windows.Forms;
 
 namespace Ravintolatilaus
 {
-    public partial class lasku : Form
+    public partial class Lasku : Form
     {
-        public lasku()
+        public SqlConnection cn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Ravintola.mdf;Integrated Security=True;Connect Timeout=30");
+
+        public Lasku()
         {
             InitializeComponent();
 
-            paluuTarjoilijaNayttoon.Click += PaluuTarjoilijaNayttoon_Click;
         }
 
-        //paluu tarjoilijanäyttöö painike
-        private void PaluuTarjoilijaNayttoon_Click(object sender, EventArgs e)
+        private void HaeTilaus_Click(object sender, EventArgs e)
         {
-            Tarjoilija tarjoilija = new Tarjoilija();
-            this.Close();
-            tarjoilija.Show();
-        }
+            listView1.Items.Clear();
 
-        private void tilausBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.tilausBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.ravintolaDataSet1);
+                        
+                int.TryParse(comboBox1.SelectedItem.ToString(), out int poyta);
+                SqlCommand cm = new SqlCommand("SELECT tilausID, poyta_poytaID, ruokalista_annos, hinta FROM dbo.tilaus JOIN dbo.ruokalista ON tilaus.ruokalista_annos = ruokalista.annos WHERE poyta_poytaID = " + poyta + " ORDER BY tilausID", cn);
 
-        }
+                try
+                {
+                    cn.Open();
+                    SqlDataReader dr = cm.ExecuteReader();
 
-        private void lasku_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'ravintolaDataSet1.tilaus' table. You can move, or remove it, as needed.
-            this.tilausTableAdapter.Fill(this.ravintolaDataSet1.tilaus);
+                    while (dr.Read())
+                    {
+                        ListViewItem item = new ListViewItem(dr["TilausID"].ToString());
+                        item.SubItems.Add(dr["ruokalista_annos"].ToString());
 
+                        ListViewItem item2 = new ListViewItem(dr["hinta"].ToString());
+                        //item2.SubItems.Add(dr["hinta"].ToString());
+
+                        listView1.Items.Add(item);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    cn.Close();
+                }
+            
+                
         }
     }
 }

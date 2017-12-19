@@ -78,6 +78,12 @@
     <Compile Include="Kokki.Designer.cs">
       <DependentUpon>Kokki.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lasku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lasku.Designer.cs">
+      <DependentUpon>Lasku.cs</DependentUpon>
+    </Compile>
     <Compile Include="RavintolaDataSet21.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -151,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Kokki.resx">
       <DependentUpon>Kokki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lasku.resx">
+      <DependentUpon>Lasku.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TilausLista.resx">
       <DependentUpon>TilausLista.cs</DependentUpon>

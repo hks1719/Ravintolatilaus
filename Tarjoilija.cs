@@ -20,6 +20,7 @@ namespace Ravintolatilaus
             tilaus.Click += tilaus_Click;
             paluuAloitusnayttoon.Click += PaluuAloitusnayttoon_Click;
             ruokalista.Click += Ruokalista_Click;
+            lasku.Click += lasku_Click;
 
         
         }
@@ -66,6 +67,13 @@ namespace Ravintolatilaus
             TilausSyotto f2 = new TilausSyotto();
             this.Close();
             f2.ShowDialog();
+        }
+
+        private void lasku_Click(object sender, EventArgs e)
+        {
+            Lasku lasku = new Lasku();
+            this.Close();
+            lasku.Show();
         }
     }
 }
