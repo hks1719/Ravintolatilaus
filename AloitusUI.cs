@@ -19,8 +19,9 @@ namespace Ravintolatilaus
             //tarjoilijapainike
             tarjoilija.Click += Tarjoilija_Click;
 
+            // Nämä kun otin pois käytöstä niin ei aukea enää tuplana!!
             //esimiespainike
-            pomo.Click += pomo_Click;
+            //pomo.Click += pomo_Click;
 
             //kokkipainike
             //kokkiPainike.Click += kokkiPainike_Click;
