@@ -64,7 +64,7 @@
             // 
             this.poytavaraukset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.poytavaraukset.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.poytavaraukset.Location = new System.Drawing.Point(89, 185);
+            this.poytavaraukset.Location = new System.Drawing.Point(348, 182);
             this.poytavaraukset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.poytavaraukset.Name = "poytavaraukset";
             this.poytavaraukset.Size = new System.Drawing.Size(200, 100);
@@ -86,20 +86,22 @@
             // 
             // uusiTilaus
             // 
-            this.uusiTilaus.Location = new System.Drawing.Point(401, 233);
-            this.uusiTilaus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uusiTilaus.Location = new System.Drawing.Point(89, 337);
+            this.uusiTilaus.Margin = new System.Windows.Forms.Padding(4);
             this.uusiTilaus.Name = "uusiTilaus";
-            this.uusiTilaus.Size = new System.Drawing.Size(147, 26);
+            this.uusiTilaus.Size = new System.Drawing.Size(200, 63);
             this.uusiTilaus.TabIndex = 6;
-            this.uusiTilaus.Text = "Testi Uusi tilaus";
+            this.uusiTilaus.Text = "Uusi tilaus, koodilla tehty tietokanta";
             this.uusiTilaus.UseVisualStyleBackColor = true;
             this.uusiTilaus.Click += new System.EventHandler(this.button1_Click);
             // 
             // lasku
             // 
-            this.lasku.Location = new System.Drawing.Point(95, 315);
+            this.lasku.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lasku.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lasku.Location = new System.Drawing.Point(89, 182);
             this.lasku.Name = "lasku";
-            this.lasku.Size = new System.Drawing.Size(130, 65);
+            this.lasku.Size = new System.Drawing.Size(200, 100);
             this.lasku.TabIndex = 7;
             this.lasku.Text = "Lasku";
             this.lasku.UseVisualStyleBackColor = true;
