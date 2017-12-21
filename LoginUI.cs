@@ -17,16 +17,16 @@ namespace Ravintolatilaus
     public partial class LoginUI : Form
     {
         //MSSQL Tietokanta koodi
-        SqlConnection con = new SqlConnection();
+        //SqlConnection con = new SqlConnection();
 
         ////Käyttäen DByhteys stringä
-        //string connstr = Ravintolatilaus.DByhteys.GetConnectionString();
+        string connstr = Ravintolatilaus.DByhteys.GetConnectionString();
 
         public LoginUI()
         {
             //MSSQL Tietokanta koodi
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Ravintola.mdf;Integrated Security=True;Connect Timeout=30";
+            //SqlConnection con = new SqlConnection();
+            //con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Ravintola.mdf;Integrated Security=True;Connect Timeout=30";
 
             InitializeComponent();
             PassText1.PasswordChar = '•';
@@ -35,10 +35,10 @@ namespace Ravintolatilaus
         private void Form1_Load(object sender, EventArgs e)
         {
             //MSSQL Tietokanta koodi 
-            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Ravintola.mdf;Integrated Security=True;Connect Timeout=30");
+            //SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Ravintola.mdf;Integrated Security=True;Connect Timeout=30");
 
             ////Käyttäen DByhteys stringä
-            //SqlConnection con = new SqlConnection(connstr);
+            SqlConnection con = new SqlConnection(connstr);
             con.Open();
 
             {
@@ -71,11 +71,11 @@ namespace Ravintolatilaus
             //MSSQL Tietokanta koodi
             //Kirjautuminen SQL kannasta katsoen
             //
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Ravintola.mdf;Integrated Security=True;Connect Timeout=30";
+            //SqlConnection con = new SqlConnection();
+            //con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Ravintola.mdf;Integrated Security=True;Connect Timeout=30";
 
             ////Käyttäen DByhteys stringä
-            //SqlConnection con = new SqlConnection(connstr);
+            SqlConnection con = new SqlConnection(connstr);
 
             con.Open();
             string userid = UserText1.Text;
