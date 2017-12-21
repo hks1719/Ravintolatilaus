@@ -34,6 +34,7 @@
             this.paluuAloitusnayttoon = new System.Windows.Forms.Button();
             this.uusiTilaus = new System.Windows.Forms.Button();
             this.lasku = new System.Windows.Forms.Button();
+            this.laskutus = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ruokalista
@@ -99,19 +100,32 @@
             // 
             this.lasku.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lasku.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lasku.Location = new System.Drawing.Point(89, 182);
+            this.lasku.Location = new System.Drawing.Point(89, 303);
             this.lasku.Name = "lasku";
-            this.lasku.Size = new System.Drawing.Size(200, 100);
+            this.lasku.Size = new System.Drawing.Size(200, 27);
             this.lasku.TabIndex = 7;
             this.lasku.Text = "Lasku";
             this.lasku.UseVisualStyleBackColor = true;
             this.lasku.Click += new System.EventHandler(this.lasku_Click);
+            // 
+            // laskutus
+            // 
+            this.laskutus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.laskutus.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.laskutus.Location = new System.Drawing.Point(89, 182);
+            this.laskutus.Name = "laskutus";
+            this.laskutus.Size = new System.Drawing.Size(200, 100);
+            this.laskutus.TabIndex = 8;
+            this.laskutus.Text = "Laskutus";
+            this.laskutus.UseVisualStyleBackColor = true;
+            this.laskutus.Click += new System.EventHandler(this.laskutus_Click);
             // 
             // Tarjoilija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(632, 427);
+            this.Controls.Add(this.laskutus);
             this.Controls.Add(this.lasku);
             this.Controls.Add(this.uusiTilaus);
             this.Controls.Add(this.paluuAloitusnayttoon);
@@ -132,5 +146,6 @@
         private System.Windows.Forms.Button paluuAloitusnayttoon;
         private System.Windows.Forms.Button uusiTilaus;
         private System.Windows.Forms.Button lasku;
+        private System.Windows.Forms.Button laskutus;
     }
 }
