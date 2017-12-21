@@ -36,9 +36,6 @@
             this.ruokalista_annos = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.hinta = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.haeTilaus = new System.Windows.Forms.Button();
-            this.tilausYhteensa_label = new System.Windows.Forms.Label();
-            this.tilausYhteensa = new System.Windows.Forms.TextBox();
-            this.NaytaYhteensa = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -105,43 +102,13 @@
             this.haeTilaus.TabIndex = 3;
             this.haeTilaus.Text = "Hae tilaus";
             this.haeTilaus.UseVisualStyleBackColor = true;
-            this.haeTilaus.Click += new System.EventHandler(this.HaeTilaus_Click);
-            // 
-            // tilausYhteensa_label
-            // 
-            this.tilausYhteensa_label.AutoSize = true;
-            this.tilausYhteensa_label.Location = new System.Drawing.Point(332, 408);
-            this.tilausYhteensa_label.Name = "tilausYhteensa_label";
-            this.tilausYhteensa_label.Size = new System.Drawing.Size(110, 17);
-            this.tilausYhteensa_label.TabIndex = 4;
-            this.tilausYhteensa_label.Text = "Tilaus Yhteensä";
-            // 
-            // tilausYhteensa
-            // 
-            this.tilausYhteensa.Location = new System.Drawing.Point(468, 408);
-            this.tilausYhteensa.Multiline = true;
-            this.tilausYhteensa.Name = "tilausYhteensa";
-            this.tilausYhteensa.Size = new System.Drawing.Size(120, 77);
-            this.tilausYhteensa.TabIndex = 5;
-            // 
-            // NaytaYhteensa
-            // 
-            this.NaytaYhteensa.Location = new System.Drawing.Point(133, 408);
-            this.NaytaYhteensa.Name = "NaytaYhteensa";
-            this.NaytaYhteensa.Size = new System.Drawing.Size(152, 77);
-            this.NaytaYhteensa.TabIndex = 6;
-            this.NaytaYhteensa.Text = "Näytä tilauksen yhteissumma";
-            this.NaytaYhteensa.UseVisualStyleBackColor = true;
-            this.NaytaYhteensa.Click += new System.EventHandler(this.NaytaYhteensa_Click);
+            this.haeTilaus.Click += new System.EventHandler(this.haeTilaus_Click);
             // 
             // Lasku
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(967, 587);
-            this.Controls.Add(this.NaytaYhteensa);
-            this.Controls.Add(this.tilausYhteensa);
-            this.Controls.Add(this.tilausYhteensa_label);
+            this.ClientSize = new System.Drawing.Size(967, 459);
             this.Controls.Add(this.haeTilaus);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.label1);
@@ -163,8 +130,6 @@
         private System.Windows.Forms.ColumnHeader hinta;
         private System.Windows.Forms.Button haeTilaus;
         private System.Windows.Forms.ColumnHeader poyta_poytaID;
-        private System.Windows.Forms.Label tilausYhteensa_label;
-        private System.Windows.Forms.TextBox tilausYhteensa;
-        private System.Windows.Forms.Button NaytaYhteensa;
+        //private System.Windows.Forms.Button NaytaYhteensa;
     }
 }

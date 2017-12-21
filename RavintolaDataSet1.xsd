@@ -367,7 +367,16 @@ SELECT tilausID, kommentti, poyta_poytaID, ruokalista_annos, henkilokunta_id, au
               <Mapping SourceColumn="henkilokunta_id" DataSetColumn="henkilokunta_id" />
               <Mapping SourceColumn="auki" DataSetColumn="auki" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="RavintolaConnectionStringLocalDB (Settings)" DbObjectName="dbo.tilaus" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT tilausID, kommentti, poyta_poytaID, ruokalista_annos, henkilokunta_id, auki FROM dbo.tilaus</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
         </Tables>
         <Sources />
@@ -377,7 +386,7 @@ SELECT tilausID, kommentti, poyta_poytaID, ruokalista_annos, henkilokunta_id, au
   <xs:element name="RavintolaDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="RavintolaDataSet1" msprop:Generator_UserDSName="RavintolaDataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="henkilokunta" msprop:Generator_TableClassName="henkilokuntaDataTable" msprop:Generator_TableVarName="tablehenkilokunta" msprop:Generator_TablePropName="henkilokunta" msprop:Generator_RowDeletingName="henkilokuntaRowDeleting" msprop:Generator_RowChangingName="henkilokuntaRowChanging" msprop:Generator_RowEvHandlerName="henkilokuntaRowChangeEventHandler" msprop:Generator_RowDeletedName="henkilokuntaRowDeleted" msprop:Generator_UserTableName="henkilokunta" msprop:Generator_RowChangedName="henkilokuntaRowChanged" msprop:Generator_RowEvArgName="henkilokuntaRowChangeEvent" msprop:Generator_RowClassName="henkilokuntaRow">
+        <xs:element name="henkilokunta" msprop:Generator_TableClassName="henkilokuntaDataTable" msprop:Generator_TableVarName="tablehenkilokunta" msprop:Generator_RowChangedName="henkilokuntaRowChanged" msprop:Generator_TablePropName="henkilokunta" msprop:Generator_RowDeletingName="henkilokuntaRowDeleting" msprop:Generator_RowChangingName="henkilokuntaRowChanging" msprop:Generator_RowEvHandlerName="henkilokuntaRowChangeEventHandler" msprop:Generator_RowDeletedName="henkilokuntaRowDeleted" msprop:Generator_RowClassName="henkilokuntaRow" msprop:Generator_UserTableName="henkilokunta" msprop:Generator_RowEvArgName="henkilokuntaRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -399,7 +408,7 @@ SELECT tilausID, kommentti, poyta_poytaID, ruokalista_annos, henkilokunta_id, au
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="login" msprop:Generator_TableClassName="loginDataTable" msprop:Generator_TableVarName="tablelogin" msprop:Generator_TablePropName="login" msprop:Generator_RowDeletingName="loginRowDeleting" msprop:Generator_RowChangingName="loginRowChanging" msprop:Generator_RowEvHandlerName="loginRowChangeEventHandler" msprop:Generator_RowDeletedName="loginRowDeleted" msprop:Generator_UserTableName="login" msprop:Generator_RowChangedName="loginRowChanged" msprop:Generator_RowEvArgName="loginRowChangeEvent" msprop:Generator_RowClassName="loginRow">
+        <xs:element name="login" msprop:Generator_TableClassName="loginDataTable" msprop:Generator_TableVarName="tablelogin" msprop:Generator_RowChangedName="loginRowChanged" msprop:Generator_TablePropName="login" msprop:Generator_RowDeletingName="loginRowDeleting" msprop:Generator_RowChangingName="loginRowChanging" msprop:Generator_RowEvHandlerName="loginRowChangeEventHandler" msprop:Generator_RowDeletedName="loginRowDeleted" msprop:Generator_RowClassName="loginRow" msprop:Generator_UserTableName="login" msprop:Generator_RowEvArgName="loginRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID">
@@ -426,7 +435,7 @@ SELECT tilausID, kommentti, poyta_poytaID, ruokalista_annos, henkilokunta_id, au
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="poyta" msprop:Generator_TableClassName="poytaDataTable" msprop:Generator_TableVarName="tablepoyta" msprop:Generator_TablePropName="poyta" msprop:Generator_RowDeletingName="poytaRowDeleting" msprop:Generator_RowChangingName="poytaRowChanging" msprop:Generator_RowEvHandlerName="poytaRowChangeEventHandler" msprop:Generator_RowDeletedName="poytaRowDeleted" msprop:Generator_UserTableName="poyta" msprop:Generator_RowChangedName="poytaRowChanged" msprop:Generator_RowEvArgName="poytaRowChangeEvent" msprop:Generator_RowClassName="poytaRow">
+        <xs:element name="poyta" msprop:Generator_TableClassName="poytaDataTable" msprop:Generator_TableVarName="tablepoyta" msprop:Generator_RowChangedName="poytaRowChanged" msprop:Generator_TablePropName="poyta" msprop:Generator_RowDeletingName="poytaRowDeleting" msprop:Generator_RowChangingName="poytaRowChanging" msprop:Generator_RowEvHandlerName="poytaRowChangeEventHandler" msprop:Generator_RowDeletedName="poytaRowDeleted" msprop:Generator_RowClassName="poytaRow" msprop:Generator_UserTableName="poyta" msprop:Generator_RowEvArgName="poytaRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="poytaID" msprop:Generator_ColumnVarNameInTable="columnpoytaID" msprop:Generator_ColumnPropNameInRow="poytaID" msprop:Generator_ColumnPropNameInTable="poytaIDColumn" msprop:Generator_UserColumnName="poytaID" type="xs:int" />
@@ -434,7 +443,7 @@ SELECT tilausID, kommentti, poyta_poytaID, ruokalista_annos, henkilokunta_id, au
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="rooli" msprop:Generator_TableClassName="rooliDataTable" msprop:Generator_TableVarName="tablerooli" msprop:Generator_TablePropName="rooli" msprop:Generator_RowDeletingName="rooliRowDeleting" msprop:Generator_RowChangingName="rooliRowChanging" msprop:Generator_RowEvHandlerName="rooliRowChangeEventHandler" msprop:Generator_RowDeletedName="rooliRowDeleted" msprop:Generator_UserTableName="rooli" msprop:Generator_RowChangedName="rooliRowChanged" msprop:Generator_RowEvArgName="rooliRowChangeEvent" msprop:Generator_RowClassName="rooliRow">
+        <xs:element name="rooli" msprop:Generator_TableClassName="rooliDataTable" msprop:Generator_TableVarName="tablerooli" msprop:Generator_RowChangedName="rooliRowChanged" msprop:Generator_TablePropName="rooli" msprop:Generator_RowDeletingName="rooliRowDeleting" msprop:Generator_RowChangingName="rooliRowChanging" msprop:Generator_RowEvHandlerName="rooliRowChangeEventHandler" msprop:Generator_RowDeletedName="rooliRowDeleted" msprop:Generator_RowClassName="rooliRow" msprop:Generator_UserTableName="rooli" msprop:Generator_RowEvArgName="rooliRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="rooliID" msprop:Generator_ColumnVarNameInTable="columnrooliID" msprop:Generator_ColumnPropNameInRow="rooliID" msprop:Generator_ColumnPropNameInTable="rooliIDColumn" msprop:Generator_UserColumnName="rooliID" type="xs:int" />
@@ -448,7 +457,7 @@ SELECT tilausID, kommentti, poyta_poytaID, ruokalista_annos, henkilokunta_id, au
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="ruokalista" msprop:Generator_TableClassName="ruokalistaDataTable" msprop:Generator_TableVarName="tableruokalista" msprop:Generator_TablePropName="ruokalista" msprop:Generator_RowDeletingName="ruokalistaRowDeleting" msprop:Generator_RowChangingName="ruokalistaRowChanging" msprop:Generator_RowEvHandlerName="ruokalistaRowChangeEventHandler" msprop:Generator_RowDeletedName="ruokalistaRowDeleted" msprop:Generator_UserTableName="ruokalista" msprop:Generator_RowChangedName="ruokalistaRowChanged" msprop:Generator_RowEvArgName="ruokalistaRowChangeEvent" msprop:Generator_RowClassName="ruokalistaRow">
+        <xs:element name="ruokalista" msprop:Generator_TableClassName="ruokalistaDataTable" msprop:Generator_TableVarName="tableruokalista" msprop:Generator_RowChangedName="ruokalistaRowChanged" msprop:Generator_TablePropName="ruokalista" msprop:Generator_RowDeletingName="ruokalistaRowDeleting" msprop:Generator_RowChangingName="ruokalistaRowChanging" msprop:Generator_RowEvHandlerName="ruokalistaRowChangeEventHandler" msprop:Generator_RowDeletedName="ruokalistaRowDeleted" msprop:Generator_RowClassName="ruokalistaRow" msprop:Generator_UserTableName="ruokalista" msprop:Generator_RowEvArgName="ruokalistaRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="annos" msprop:Generator_ColumnVarNameInTable="columnannos" msprop:Generator_ColumnPropNameInRow="annos" msprop:Generator_ColumnPropNameInTable="annosColumn" msprop:Generator_UserColumnName="annos" type="xs:int" />
@@ -471,7 +480,7 @@ SELECT tilausID, kommentti, poyta_poytaID, ruokalista_annos, henkilokunta_id, au
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tilaus" msprop:Generator_TableClassName="tilausDataTable" msprop:Generator_TableVarName="tabletilaus" msprop:Generator_TablePropName="tilaus" msprop:Generator_RowDeletingName="tilausRowDeleting" msprop:Generator_RowChangingName="tilausRowChanging" msprop:Generator_RowEvHandlerName="tilausRowChangeEventHandler" msprop:Generator_RowDeletedName="tilausRowDeleted" msprop:Generator_UserTableName="tilaus" msprop:Generator_RowChangedName="tilausRowChanged" msprop:Generator_RowEvArgName="tilausRowChangeEvent" msprop:Generator_RowClassName="tilausRow">
+        <xs:element name="tilaus" msprop:Generator_TableClassName="tilausDataTable" msprop:Generator_TableVarName="tabletilaus" msprop:Generator_RowChangedName="tilausRowChanged" msprop:Generator_TablePropName="tilaus" msprop:Generator_RowDeletingName="tilausRowDeleting" msprop:Generator_RowChangingName="tilausRowChanging" msprop:Generator_RowEvHandlerName="tilausRowChangeEventHandler" msprop:Generator_RowDeletedName="tilausRowDeleted" msprop:Generator_RowClassName="tilausRow" msprop:Generator_UserTableName="tilaus" msprop:Generator_RowEvArgName="tilausRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="tilausID" msprop:Generator_ColumnVarNameInTable="columntilausID" msprop:Generator_ColumnPropNameInRow="tilausID" msprop:Generator_ColumnPropNameInTable="tilausIDColumn" msprop:Generator_UserColumnName="tilausID" type="xs:int" />
@@ -518,10 +527,10 @@ SELECT tilausID, kommentti, poyta_poytaID, ruokalista_annos, henkilokunta_id, au
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_henkilokunta_rooli" msdata:parent="rooli" msdata:child="henkilokunta" msdata:parentkey="rooliID" msdata:childkey="rooli_rooliID" msprop:Generator_UserChildTable="henkilokunta" msprop:Generator_ChildPropName="GethenkilokuntaRows" msprop:Generator_UserRelationName="FK_henkilokunta_rooli" msprop:Generator_RelationVarName="relationFK_henkilokunta_rooli" msprop:Generator_UserParentTable="rooli" msprop:Generator_ParentPropName="rooliRow" />
-      <msdata:Relationship name="FK_poyta_tilaus" msdata:parent="tilaus" msdata:child="poyta" msdata:parentkey="tilausID" msdata:childkey="poytaID" msprop:Generator_UserChildTable="poyta" msprop:Generator_ChildPropName="GetpoytaRows" msprop:Generator_UserRelationName="FK_poyta_tilaus" msprop:Generator_RelationVarName="relationFK_poyta_tilaus" msprop:Generator_UserParentTable="tilaus" msprop:Generator_ParentPropName="tilausRow" />
-      <msdata:Relationship name="FK_tilaus_henkilokunta" msdata:parent="henkilokunta" msdata:child="tilaus" msdata:parentkey="ID" msdata:childkey="henkilokunta_id" msprop:Generator_UserChildTable="tilaus" msprop:Generator_ChildPropName="GettilausRows" msprop:Generator_UserRelationName="FK_tilaus_henkilokunta" msprop:Generator_ParentPropName="henkilokuntaRow" msprop:Generator_RelationVarName="relationFK_tilaus_henkilokunta" msprop:Generator_UserParentTable="henkilokunta" />
-      <msdata:Relationship name="FK_tilaus_ruokalista" msdata:parent="ruokalista" msdata:child="tilaus" msdata:parentkey="annos" msdata:childkey="ruokalista_annos" msprop:Generator_UserChildTable="tilaus" msprop:Generator_ChildPropName="GettilausRows" msprop:Generator_UserRelationName="FK_tilaus_ruokalista" msprop:Generator_ParentPropName="ruokalistaRow" msprop:Generator_RelationVarName="relationFK_tilaus_ruokalista" msprop:Generator_UserParentTable="ruokalista" />
+      <msdata:Relationship name="FK_henkilokunta_rooli" msdata:parent="rooli" msdata:child="henkilokunta" msdata:parentkey="rooliID" msdata:childkey="rooli_rooliID" msprop:Generator_UserChildTable="henkilokunta" msprop:Generator_ChildPropName="GethenkilokuntaRows" msprop:Generator_UserRelationName="FK_henkilokunta_rooli" msprop:Generator_ParentPropName="rooliRow" msprop:Generator_RelationVarName="relationFK_henkilokunta_rooli" msprop:Generator_UserParentTable="rooli" />
+      <msdata:Relationship name="FK_poyta_tilaus" msdata:parent="tilaus" msdata:child="poyta" msdata:parentkey="tilausID" msdata:childkey="poytaID" msprop:Generator_UserChildTable="poyta" msprop:Generator_ChildPropName="GetpoytaRows" msprop:Generator_UserRelationName="FK_poyta_tilaus" msprop:Generator_ParentPropName="tilausRow" msprop:Generator_RelationVarName="relationFK_poyta_tilaus" msprop:Generator_UserParentTable="tilaus" />
+      <msdata:Relationship name="FK_tilaus_henkilokunta" msdata:parent="henkilokunta" msdata:child="tilaus" msdata:parentkey="ID" msdata:childkey="henkilokunta_id" msprop:Generator_UserChildTable="tilaus" msprop:Generator_ChildPropName="GettilausRows" msprop:Generator_UserRelationName="FK_tilaus_henkilokunta" msprop:Generator_RelationVarName="relationFK_tilaus_henkilokunta" msprop:Generator_UserParentTable="henkilokunta" msprop:Generator_ParentPropName="henkilokuntaRow" />
+      <msdata:Relationship name="FK_tilaus_ruokalista" msdata:parent="ruokalista" msdata:child="tilaus" msdata:parentkey="annos" msdata:childkey="ruokalista_annos" msprop:Generator_UserChildTable="tilaus" msprop:Generator_ChildPropName="GettilausRows" msprop:Generator_UserRelationName="FK_tilaus_ruokalista" msprop:Generator_RelationVarName="relationFK_tilaus_ruokalista" msprop:Generator_UserParentTable="ruokalista" msprop:Generator_ParentPropName="ruokalistaRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

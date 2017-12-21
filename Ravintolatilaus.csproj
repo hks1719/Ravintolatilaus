@@ -84,6 +84,12 @@
     <Compile Include="Lasku.Designer.cs">
       <DependentUpon>Lasku.cs</DependentUpon>
     </Compile>
+    <Compile Include="Laskutus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laskutus.Designer.cs">
+      <DependentUpon>Laskutus.cs</DependentUpon>
+    </Compile>
     <Compile Include="RavintolaDataSet21.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -124,6 +130,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RavintolaDataSet1.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Ruokalista.cs">
       <SubType>Form</SubType>
@@ -160,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lasku.resx">
       <DependentUpon>Lasku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laskutus.resx">
+      <DependentUpon>Laskutus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TilausLista.resx">
       <DependentUpon>TilausLista.cs</DependentUpon>
@@ -217,14 +227,17 @@
     </None>
     <None Include="RavintolaDataSet1.xsc">
       <DependentUpon>RavintolaDataSet1.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="RavintolaDataSet1.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>RavintolaDataSet1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="RavintolaDataSet1.xss">
       <DependentUpon>RavintolaDataSet1.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="RavintolaDataSet21.xsc">
       <DependentUpon>RavintolaDataSet21.xsd</DependentUpon>

@@ -37,8 +37,8 @@ namespace Ravintolatilaus.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Ravintola.mdf" +
-            ";Integrated Security=True;Connect Timeout=30")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Hanna\\Documents\\Pjok" +
+            "ti2017\\Ravintola.mdf;Integrated Security=True;Connect Timeout=30")]
         public string RavintolaConnectionStringLocalDB {
             get {
                 return ((string)(this["RavintolaConnectionStringLocalDB"]));

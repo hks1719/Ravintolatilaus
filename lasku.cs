@@ -20,8 +20,7 @@ namespace Ravintolatilaus
 
         }
 
-        
-        private void HaeTilaus_Click(object sender, EventArgs e)
+        private void haeTilaus_Click(object sender, EventArgs e)
         {
             listView1.Items.Clear();
 
@@ -37,9 +36,12 @@ namespace Ravintolatilaus
                 while (dr.Read())
                 {
                     ListViewItem item = new ListViewItem(dr["tilausID"].ToString());
+                    
                     item.SubItems.Add(dr["poyta_poytaID"].ToString());
                     item.SubItems.Add(dr["ruokalista_annos"].ToString());
                     item.SubItems.Add(dr["hinta"].ToString());
+
+
 
                     listView1.Items.Add(item);
 
@@ -54,14 +56,7 @@ namespace Ravintolatilaus
                 cn.Close();
             }
 
-        }
-
-        private void NaytaYhteensa_Click(object sender, EventArgs e)
-        {
-           
 
         }
-
-
     }
 }
